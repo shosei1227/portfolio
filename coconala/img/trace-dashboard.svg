@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">TRACE analytics dashboard concept</title>
+  <desc id="desc">A dark sidebar, metric cards, bar chart and table arranged in a clean dashboard.</desc>
+  <rect width="1600" height="1000" fill="#e8eae5"/>
+  <rect x="62" y="54" width="1476" height="892" rx="22" fill="#f8f9f5" stroke="#c9ccc5" stroke-width="3"/>
+  <path d="M84 54h220v892H84c-12 0-22-10-22-22V76c0-12 10-22 22-22Z" fill="#17191d"/>
+  <text x="110" y="135" fill="#f5f5ef" font-family="Arial,sans-serif" font-weight="700" font-size="52">TR.</text>
+  <circle cx="126" cy="235" r="18" fill="#d7ff45"/><rect x="166" y="220" width="82" height="12" rx="6" fill="#f5f5ef"/>
+  <circle cx="126" cy="309" r="18" fill="none" stroke="#6f7379" stroke-width="4"/><rect x="166" y="294" width="65" height="12" rx="6" fill="#6f7379"/>
+  <circle cx="126" cy="383" r="18" fill="none" stroke="#6f7379" stroke-width="4"/><rect x="166" y="368" width="74" height="12" rx="6" fill="#6f7379"/>
+  <text x="354" y="143" fill="#202329" font-family="Arial,sans-serif" font-weight="600" font-size="42">Overview</text>
+  <text x="1350" y="134" text-anchor="end" fill="#8a8d87" font-family="Arial,sans-serif" font-size="18">OCTOBER 2026</text>
+  <g font-family="Arial,sans-serif">
+    <rect x="354" y="190" width="334" height="182" rx="13" fill="#fff" stroke="#d7d9d3"/><text x="388" y="240" fill="#858982" font-size="19">VISITORS</text><text x="388" y="326" fill="#202329" font-weight="700" font-size="62">24.8k</text>
+    <rect x="716" y="190" width="334" height="182" rx="13" fill="#fff" stroke="#d7d9d3"/><text x="750" y="240" fill="#858982" font-size="19">CONVERSION</text><text x="750" y="326" fill="#202329" font-weight="700" font-size="62">4.82%</text>
+    <rect x="1078" y="190" width="334" height="182" rx="13" fill="#fff" stroke="#d7d9d3"/><text x="1112" y="240" fill="#858982" font-size="19">REVENUE</text><text x="1112" y="326" fill="#202329" font-weight="700" font-size="62">¥1.24m</text>
+  </g>
+  <rect x="354" y="406" width="688" height="434" rx="13" fill="#fff" stroke="#d7d9d3"/>
+  <text x="388" y="460" fill="#202329" font-family="Arial,sans-serif" font-weight="600" font-size="24">Weekly activity</text>
+  <path d="M390 760H1004M390 680H1004M390 600H1004M390 520H1004" stroke="#eceee8" stroke-width="2"/>
+  <g fill="#c9e96a"><rect x="414" y="650" width="32" height="110" rx="4"/><rect x="464" y="595" width="32" height="165" rx="4"/><rect x="514" y="620" width="32" height="140" rx="4"/><rect x="564" y="558" width="32" height="202" rx="4"/><rect x="614" y="585" width="32" height="175" rx="4"/><rect x="664" y="520" width="32" height="240" rx="4"/><rect x="714" y="548" width="32" height="212" rx="4"/><rect x="764" y="485" width="32" height="275" rx="4"/><rect x="814" y="535" width="32" height="225" rx="4"/><rect x="864" y="468" width="32" height="292" rx="4"/><rect x="914" y="500" width="32" height="260" rx="4"/><rect x="964" y="446" width="32" height="314" rx="4"/></g>
+  <g fill="#2155e8"><rect x="664" y="520" width="32" height="240" rx="4"/><rect x="764" y="485" width="32" height="275" rx="4"/><rect x="864" y="468" width="32" height="292" rx="4"/><rect x="964" y="446" width="32" height="314" rx="4"/></g>
+  <rect x="1072" y="406" width="340" height="434" rx="13" fill="#202329"/>
+  <text x="1106" y="462" fill="#fff" font-family="Arial,sans-serif" font-weight="600" font-size="24">Top pages</text>
+  <g font-family="Arial,sans-serif" font-size="18"><text x="1106" y="532" fill="#a8aba5">01</text><text x="1155" y="532" fill="#fff">/home</text><text x="1368" y="532" fill="#d7ff45" text-anchor="end">42%</text><text x="1106" y="602" fill="#a8aba5">02</text><text x="1155" y="602" fill="#fff">/pricing</text><text x="1368" y="602" fill="#d7ff45" text-anchor="end">28%</text><text x="1106" y="672" fill="#a8aba5">03</text><text x="1155" y="672" fill="#fff">/stories</text><text x="1368" y="672" fill="#d7ff45" text-anchor="end">19%</text><text x="1106" y="742" fill="#a8aba5">04</text><text x="1155" y="742" fill="#fff">/about</text><text x="1368" y="742" fill="#d7ff45" text-anchor="end">11%</text></g>
+  <text x="1390" y="914" text-anchor="end" fill="#8a8d87" font-family="Arial,sans-serif" font-size="15">SAMPLE DATA / UI CONCEPT</text>
+</svg>

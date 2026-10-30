@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webデザイン制作実績のケーススタディ。">
+    <meta name="theme-color" content="#111210">
+    <title>Case Study — SHOSEI HIGUCHI</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Noto+Sans+JP:wght@300;400;500;600&amp;family=Shippori+Mincho:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/case-study.css">
+    <script src="js/case-study.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#case-main">本文へ移動</a>
+    <div class="case-progress" aria-hidden="true"><span></span></div>
+
+    <header class="case-header">
+        <a class="case-brand" href="index.html"><span>SH</span><small>Portfolio</small></a>
+        <a class="back-link" href="index.html#works">← All works</a>
+        <p data-case-index>Case 01 / 07</p>
+    </header>
+
+    <main id="case-main">
+        <section class="case-hero">
+            <div class="case-hero__meta">
+                <p data-type>自主制作 / Concept project</p>
+                <p data-year>2026</p>
+            </div>
+            <div class="case-hero__title">
+                <p data-category>Digital archive</p>
+                <h1 data-title>ASTRA</h1>
+                <p data-subtitle>観測と想像のあいだ</p>
+            </div>
+            <div class="case-hero__visual" data-visual>
+                <img data-image src="img/nasa-carina.jpg" alt="">
+                <div class="case-device" aria-hidden="true"><span></span><span></span><span></span><b data-device-title>ASTRA</b></div>
+            </div>
+            <div class="case-hero__intro">
+                <p class="case-label">Overview</p>
+                <p data-summary>NASAの宇宙写真を静かに鑑賞するためのデジタルアーカイブ。</p>
+                <a class="case-live" data-live href="astra.html">View live site <span>↗</span></a>
+            </div>
+        </section>
+
+        <section class="case-facts case-section" aria-label="プロジェクト概要">
+            <dl>
+                <div><dt>Role</dt><dd data-role>Planning / Design / Front-end</dd></div>
+                <div><dt>Scope</dt><dd data-scope>1 page / Responsive</dd></div>
+                <div><dt>Duration</dt><dd data-duration>Concept project</dd></div>
+                <div><dt>Tools</dt><dd data-tools>HTML / CSS / JavaScript</dd></div>
+            </dl>
+            <p class="case-disclosure" data-disclosure>自主制作のコンセプトです。実在するクライアント案件・公開実績ではありません。</p>
+        </section>
+
+        <section class="case-story case-section">
+            <div class="case-story__heading"><p class="case-label">01 / Challenge</p><h2>何を、<br>解くべきか。</h2></div>
+            <div class="case-story__copy"><p class="case-lead" data-challenge-lead></p><p data-challenge></p></div>
+        </section>
+
+        <section class="case-canvas case-canvas--first" data-canvas="first">
+            <div class="case-canvas__browser">
+                <div class="case-canvas__bar"><i></i><i></i><i></i><span data-domain>project.local</span></div>
+                <div class="case-canvas__screen"><img data-image-secondary src="img/nasa-pillars.jpg" alt=""></div>
+            </div>
+        </section>
+
+        <section class="case-story case-section">
+            <div class="case-story__heading"><p class="case-label">02 / Approach</p><h2>判断を、<br>積み重ねる。</h2></div>
+            <div class="case-story__copy"><p class="case-lead" data-approach-lead></p><p data-approach></p></div>
+        </section>
+
+        <section class="decisions case-section" aria-labelledby="decisions-title">
+            <div class="decisions__head"><p class="case-label">03 / Design decisions</p><h2 id="decisions-title">設計の要点</h2></div>
+            <ol data-decisions></ol>
+        </section>
+
+        <section class="case-system case-section">
+            <div class="case-system__type">
+                <p class="case-label">Type scale</p>
+                <p>Aa</p><span data-font-label>Editorial / Sans</span>
+            </div>
+            <div class="case-system__palette"><p class="case-label">Color system</p><div data-palette></div></div>
+        </section>
+
+        <section class="case-outcome case-section">
+            <div><p class="case-label">04 / Outcome</p><h2>つくって、<br>確かめたこと。</h2></div>
+            <div class="case-outcome__copy"><p data-outcome></p><ul data-deliverables></ul></div>
+        </section>
+
+        <section class="next-case">
+            <p>Next case study</p>
+            <a data-next href="case-study.html?project=lune"><span data-next-title>LUNE</span><b>↗</b></a>
+        </section>
+    </main>
+
+    <footer class="case-footer"><a href="index.html">SH.</a><p>© 2026 Shosei Higuchi</p><a href="#case-main">Back to top ↑</a></footer>
+</body>
+</html>

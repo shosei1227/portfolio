@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NASAの宇宙写真と映像をめぐる、個人制作のデジタル・スペースアーカイブ。">
+    <meta name="theme-color" content="#070808">
+    <title>ASTRA — 静かな宇宙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/astra.css">
+    <script src="js/astra.js" defer></script>
+</head>
+<body>
+    <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <a class="site-logo" href="#top" aria-label="ASTRA ホームへ">
+            <span class="site-logo__mark" aria-hidden="true"></span>
+            <span>ASTRA</span>
+        </a>
+
+        <nav class="site-nav" aria-label="メインナビゲーション">
+            <a href="#statement">Statement</a>
+            <a href="#observations">Observations</a>
+            <a href="#cinema">Cinema</a>
+        </nav>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="global-menu">
+            <span class="menu-button__label">Menu</span>
+            <span class="menu-button__icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+    </header>
+
+    <div class="global-menu" id="global-menu" aria-hidden="true">
+        <div class="global-menu__inner">
+            <p class="global-menu__eyebrow">Explore the unknown</p>
+            <nav class="global-menu__nav" aria-label="オーバーレイメニュー">
+                <a href="#statement"><span>01</span>Statement</a>
+                <a href="#observations"><span>02</span>Observations</a>
+                <a href="#cinema"><span>03</span>Cinema</a>
+                <a href="#about"><span>04</span>About</a>
+            </nav>
+            <p class="global-menu__note">A personal archive of light,<br>distance, and imagination.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero__media" aria-hidden="true">
+                <img src="img/nasa-carina.jpg" alt="">
+            </div>
+            <div class="hero__shade" aria-hidden="true"></div>
+
+            <p class="hero__index">Personal Space Archive <span>001</span></p>
+            <h1 class="hero__title" id="hero-title">
+                <span class="hero__title-main">ASTRA</span>
+                <span class="hero__title-sub">観測と想像のあいだ</span>
+            </h1>
+            <p class="hero__poem">光が届くまでの時間を<br>わたしたちは宇宙と呼ぶ</p>
+            <p class="hero__credit">Carina Nebula / NASA, ESA, CSA, STScI</p>
+            <a class="scroll-cue" href="#statement">
+                <span>Scroll to observe</span>
+                <i aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="statement section-pad" id="statement">
+            <div class="statement__label reveal">
+                <span>Statement</span>
+                <span>2026.10 / Tokyo</span>
+            </div>
+            <div class="statement__body">
+                <h2 class="statement__title reveal">遠い光は、<br>いまを問い直す。</h2>
+                <div class="statement__copy reveal">
+                    <p>宇宙を見ることは、過去を見ること。星から放たれた光が、何年、何千年、何百万年もの時間を越えて、いま私たちの目に届いています。</p>
+                    <p>ASTRAは、NASAが捉えた光の記録を、静かに見つめるための個人アーカイブです。科学と想像の境界を歩きながら、まだ名前のない感覚を探します。</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="orbit-line" aria-hidden="true">
+            <div class="orbit-line__track">
+                <span>LIGHT</span><i></i><span>DISTANCE</span><i></i><span>MEMORY</span><i></i><span>UNKNOWN</span><i></i>
+                <span>LIGHT</span><i></i><span>DISTANCE</span><i></i><span>MEMORY</span><i></i><span>UNKNOWN</span><i></i>
+            </div>
+        </div>
+
+        <section class="observations section-pad" id="observations" aria-labelledby="observations-title">
+            <div class="section-heading reveal">
+                <p><span>Selected</span> Observations</p>
+                <h2 id="observations-title">光の標本</h2>
+            </div>
+
+            <article class="observation observation--wide">
+                <a class="observation__image image-reveal" href="https://science.nasa.gov/image-detail/web-first-images-release/" target="_blank" rel="noopener noreferrer" aria-label="NASAのカリーナ星雲ページを開く">
+                    <img src="img/nasa-carina.jpg" alt="ジェイムズ・ウェッブ宇宙望遠鏡が捉えた、星々とオレンジ色のガスが広がるカリーナ星雲">
+                    <span class="observation__open" aria-hidden="true">↗</span>
+                </a>
+                <div class="observation__meta reveal">
+                    <p class="observation__number">No. 01</p>
+                    <div>
+                        <h3>Cosmic Cliffs</h3>
+                        <p>カリーナ星雲「宇宙の断崖」</p>
+                    </div>
+                    <dl>
+                        <div><dt>Distance</dt><dd>7,600 light-years</dd></div>
+                        <div><dt>Instrument</dt><dd>Webb / NIRCam</dd></div>
+                    </dl>
+                </div>
+            </article>
+
+            <article class="observation observation--portrait">
+                <div class="observation__meta reveal">
+                    <p class="observation__number">No. 02</p>
+                    <div>
+                        <h3>Pillars of Creation</h3>
+                        <p>創造の柱</p>
+                    </div>
+                    <p class="observation__description">ガスと塵がつくる巨大な柱。その内部では、新しい星が生まれ続けています。</p>
+                    <a class="text-link" href="https://science.nasa.gov/asset/webb/pillars-of-creation-nircam-image/" target="_blank" rel="noopener noreferrer">View on NASA <span>↗</span></a>
+                </div>
+                <a class="observation__image image-reveal" href="https://science.nasa.gov/asset/webb/pillars-of-creation-nircam-image/" target="_blank" rel="noopener noreferrer" aria-label="NASAの創造の柱ページを開く">
+                    <img src="img/nasa-pillars.jpg" alt="赤褐色のガスと塵の柱が星空へ伸びる、創造の柱">
+                    <span class="observation__tag">6,500 LY / SERPENS</span>
+                </a>
+            </article>
+
+            <div class="observation-pair">
+                <article class="observation observation--tile">
+                    <a class="observation__image image-reveal" href="https://science.nasa.gov/asset/webb/southern-ring-nebula-nircam-image/" target="_blank" rel="noopener noreferrer" aria-label="NASAの南のリング星雲ページを開く">
+                        <img src="img/nasa-southern-ring.jpg" alt="青緑色の輪状のガスに包まれた南のリング星雲">
+                    </a>
+                    <div class="observation__meta reveal">
+                        <p class="observation__number">No. 03</p>
+                        <div><h3>Southern Ring</h3><p>南のリング星雲</p></div>
+                    </div>
+                </article>
+
+                <article class="observation observation--tile observation--tile-lower">
+                    <a class="observation__image image-reveal" href="https://science.nasa.gov/asset/webb/stephans-quintet-nircam-and-miri-composite-image/" target="_blank" rel="noopener noreferrer" aria-label="NASAのステファンの五つ子ページを開く">
+                        <img src="img/nasa-quintet.jpg" alt="複数の銀河が接近して輝くステファンの五つ子">
+                    </a>
+                    <div class="observation__meta reveal">
+                        <p class="observation__number">No. 04</p>
+                        <div><h3>Stephan’s Quintet</h3><p>銀河たちの相互作用</p></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cinema section-pad" id="cinema" aria-labelledby="cinema-title">
+            <div class="cinema__intro reveal">
+                <div class="section-heading section-heading--light">
+                    <p><span>Moving</span> Image</p>
+                    <h2 id="cinema-title">星雲を飛ぶ</h2>
+                </div>
+                <p>平面の観測画像から、星々の距離データをもとに立体空間へ。7,500光年の彼方、カリーナ星雲への80秒の旅。</p>
+            </div>
+
+            <div class="cinema__frame reveal">
+                <video controls playsinline preload="metadata" poster="img/nasa-carina.jpg">
+                    <source src="https://assets.science.nasa.gov/content/dam/science/missions/webb/science/2025/05/STScI-01JSZEPYNQJ5T6322DPPW0RWSC.mp4" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+                <p class="cinema__caption">Flight to the Carina Nebula Complex — NASA’s Universe of Learning, 2025</p>
+            </div>
+
+            <a class="cinema__source text-link" href="https://science.nasa.gov/asset/webb/flight-to-the-carina-nebula-complex/" target="_blank" rel="noopener noreferrer">Film details on NASA <span>↗</span></a>
+        </section>
+
+        <section class="about section-pad" id="about">
+            <p class="about__orbit" aria-hidden="true">∞</p>
+            <div class="about__copy reveal">
+                <p class="about__label">About this archive</p>
+                <h2>見ることから、<br>宇宙は始まる。</h2>
+                <p>知らないものを、知らないまま見つめる。答えを急がず、その距離や時間ごと受け取る。ASTRAは、そんな観測のための小さな場所です。</p>
+            </div>
+            <dl class="about__facts reveal">
+                <div><dt>01</dt><dd>NASA / ESA / CSA imagery</dd></div>
+                <div><dt>02</dt><dd>Deep space observations</dd></div>
+                <div><dt>03</dt><dd>Curated in Tokyo</dd></div>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__top">
+            <a class="site-footer__logo" href="#top">ASTRA</a>
+            <p>Between observation<br>and imagination.</p>
+        </div>
+        <div class="site-footer__credits">
+            <p>Images: NASA, ESA, CSA, STScI. Film: NASA’s Universe of Learning.</p>
+            <p>This is an independent concept site and is not affiliated with NASA.</p>
+        </div>
+        <div class="site-footer__bottom">
+            <p>© 2026 ASTRA</p>
+            <a href="#top">Back to orbit ↑</a>
+        </div>
+    </footer>
+</body>
+</html>

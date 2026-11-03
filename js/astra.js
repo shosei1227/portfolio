@@ -38,7 +38,7 @@
         progressBar.style.transform = `scaleX(${progress})`;
         header.classList.toggle("is-scrolled", scrollTop > 40);
 
-        if (!reduceMotion && scrollTop < window.innerHeight * 1.25) {
+        if (heroImage && !reduceMotion && scrollTop < window.innerHeight * 1.25) {
             heroImage.style.transform = `translateY(${scrollTop * 0.13}px) scale(1.02)`;
         }
     };

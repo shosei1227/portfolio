@@ -3,16 +3,16 @@
 
     const projects = {
         astra: {
-            index: "01", title: "ASTRA", subtitle: "観測と想像のあいだ", category: "Digital space archive",
+            index: "01", title: "ASTRA", subtitle: "宇宙写真のアーカイブ", category: "Digital space archive",
             type: "自主制作 / Learning project", year: "2026", image: "img/nasa-carina.jpg", secondary: "img/nasa-pillars.jpg", imageAlt: "オレンジ色に輝くカリーナ星雲", secondaryAlt: "星空へ伸びる創造の柱", domain: "astra-archive.local", accent: "#a8d9db",
             summary: "NASAの宇宙写真を、情報過多にせず静かに鑑賞するためのデジタルアーカイブ。写真、余白、タイポグラフィを一体で設計しました。",
-            role: "Planning / Design / Front-end", scope: "1 page / Responsive", duration: "Learning project", tools: "HTML / CSS / JavaScript", live: "astra.html",
+            role: "Planning / Design / Front-end", scope: "2 pages / Responsive", duration: "Learning project", tools: "HTML / CSS / JavaScript / NASA Images API", live: "astra.html",
             disclosure: "自主制作の学習プロジェクトです。NASAとは関係がなく、画像クレジットは元ページ内に記載しています。",
             challengeLead: "強い写真を使いながら、情報を埋もれさせない。", challenge: "宇宙写真はそれ自体の情報量が大きく、装飾を重ねるほど鑑賞の妨げになります。一方、写真を並べるだけではサイト独自の視点が生まれません。観測記録としての信頼感と、個人アーカイブとしての余韻をどう両立するかを課題に設定しました。",
-            approachLead: "速度を落とすレイアウトで、見る行為そのものを体験に。", approach: "大きな余白、低彩度の色設計、縦書きの短い言葉で視線にリズムを作りました。画像の出典や距離などの事実情報は写真の近くへ配置し、詩的な表現と混同しないよう階層を分けています。",
+            approachLead: "速度を落とすレイアウトで、見る行為そのものを体験に。", approach: "大きな余白と低彩度の色設計で、写真を主役にしました。光が届くまでの時間を一本の線に並べる「光の旅程」と、NASAの画像ライブラリを検索できる探索ページを加え、アーカイブとして見て回れる構成にしています。画像の出典や距離などの事実情報は写真の近くへ配置し、詩的な表現と混同しないよう階層を分けています。",
             decisions: [["大きな余白","一画面に詰め込まず、写真ごとに視線を止める距離を確保。"],["情報の二層化","観測データはサンセリフ、短いステートメントは明朝体で役割を分離。"],["静かな動き","スクロール表示と画像の微細な移動に限定し、写真より動きが前に出ない設計。"]],
             font: "Noto Serif JP / Space Grotesk", palette: [["#070808","Night"],["#f1f0eb","Starlight"],["#a8d9db","Signal"],["#6b5141","Nebula"]],
-            outcome: "既存の1ページを、レスポンシブ表示、キーボード操作、動きを減らす設定まで含む実装へ発展させました。視覚表現だけでなく、クレジットと外部リンクを明確にする重要性も確認できました。", deliverables: ["Information structure","Visual direction","Responsive design","HTML / CSS / JS","Motion design","Accessibility pass"], next: "lune"
+            outcome: "既存の1ページを、レスポンシブ表示、キーボード操作、動きを減らす設定まで含む実装へ発展させ、NASAの公開APIを使う探索ページを加えました。視覚表現だけでなく、クレジットと外部リンクを明確にする重要性も確認できました。", deliverables: ["Information structure","Visual direction","Responsive design","HTML / CSS / JS","Motion design","Accessibility pass"], next: "lune"
         },
         lune: {
             index: "02", title: "LUNE", subtitle: "季節を包んで、日常へ。", category: "Florist & online store", type: "自主制作 / Concept project", year: "2026", image: "img/project-lune.jpg", secondary: "img/project-lune.jpg", imageAlt: "季節の花束を置いた花店の作業台", secondaryAlt: "季節の花束のディテール", domain: "lune-fleurs.local", accent: "#b35c52",

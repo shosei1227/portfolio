@@ -32,6 +32,7 @@
             <span class="brand__meta">Web designer<br>Tokyo, Japan</span>
         </a>
         <nav class="nav" aria-label="メインナビゲーション">
+            <a href="#apps">Apps</a>
             <a href="#works">Works</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
@@ -45,10 +46,11 @@
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
         <nav aria-label="モバイルナビゲーション">
-            <a href="#works"><small>01</small>Works</a>
-            <a href="#services"><small>02</small>Services</a>
-            <a href="#about"><small>03</small>About</a>
-            <a href="#contact"><small>04</small>Contact</a>
+            <a href="#apps"><small>01</small>Apps</a>
+            <a href="#works"><small>02</small>Works</a>
+            <a href="#services"><small>03</small>Services</a>
+            <a href="#about"><small>04</small>About</a>
+            <a href="#contact"><small>05</small>Contact</a>
         </nav>
         <p>Available for selected projects<br><span>2026 — 2027</span></p>
     </div>
@@ -68,7 +70,7 @@
             </div>
             <div class="hero__footer reveal">
                 <p class="hero__intro">見た目を整えるだけでなく、誰に・何を・どの順番で伝えるかを設計するWebデザイナーです。企画からレスポンシブ実装まで、一つの意図でつなぎます。</p>
-                <a class="circle-link" href="#works" aria-label="制作実績を見る"><span>View works</span><b aria-hidden="true">↓</b></a>
+                <a class="circle-link" href="#apps" aria-label="制作実績を見る"><span>View works</span><b aria-hidden="true">↓</b></a>
             </div>
             <div class="hero__art" aria-hidden="true">
                 <figure class="hero-card hero-card--one"><img src="img/nasa-carina.jpg" alt=""></figure>
@@ -79,9 +81,41 @@
 
         <div class="ticker" aria-hidden="true"><div class="ticker__track"><span>Strategy</span><i></i><span>Web Design</span><i></i><span>Front-end</span><i></i><span>Responsive</span><i></i><span>Strategy</span><i></i><span>Web Design</span><i></i><span>Front-end</span><i></i><span>Responsive</span><i></i></div></div>
 
+        <section class="apps section" id="apps" aria-labelledby="apps-title">
+            <div class="section-intro reveal">
+                <p class="eyebrow">01 / Working apps</p>
+                <h2 id="apps-title">動く形まで、<br>つくる。</h2>
+                <p>Claude Codeで作り、実際に動かしている4つの仕組みです。</p>
+            </div>
+
+            <div class="app-grid">
+                <article class="app-card reveal">
+                    <a class="app-card__visual" href="https://tentai-potential.vercel.app" target="_blank" rel="noopener" aria-label="天体ポテンシャルを開く（新しいタブ）"><img src="img/app-tentai.jpg" alt="太陽と地球を置き、重力のくぼみを格子で表示した画面" loading="lazy"></a>
+                    <div class="app-card__info"><span>A01</span><div><h3>天体ポテンシャル</h3><p>天体を置くと、重力のくぼみと動きが見える。</p><a class="app-card__link" href="https://tentai-potential.vercel.app" target="_blank" rel="noopener">公開中のアプリを開く ↗</a></div><small>教材アプリ</small></div>
+                </article>
+                <article class="app-card reveal">
+                    <a class="app-card__visual" href="https://yorimichi-places.vercel.app/" target="_blank" rel="noopener" aria-label="yorimichiを開く（新しいタブ）"><img src="img/app-yorimichi.jpg" alt="行きたい場所のリストと地図を並べたスマートフォンの画面" loading="lazy"></a>
+                    <div class="app-card__info"><span>A02</span><div><h3>yorimichi</h3><p>行きたい場所を、リストと地図に残す。</p><a class="app-card__link" href="https://yorimichi-places.vercel.app/" target="_blank" rel="noopener">公開中のアプリを開く ↗</a><p class="app-card__note">サンプルの場所で撮った画面です。</p></div><small>スマートフォンのアプリ</small></div>
+                </article>
+                <article class="app-card reveal">
+                    <div class="app-card__visual"><img src="img/app-saiten.jpg" alt="手書きの答案に赤の書き込みが入り、判定と点数を確認する画面" loading="lazy"></div>
+                    <div class="app-card__info"><span>A03</span><div><h3>毎日の課題の採点</h3><p>写真の提出からAIの採点案、人の確認までを1つに。</p><p class="app-card__note">模擬の答案で撮った画面です。</p></div><small>試作</small></div>
+                </article>
+                <article class="app-card reveal">
+                    <div class="app-card__visual app-card__visual--flow">
+                        <svg viewBox="0 0 600 400" role="img" aria-label="メモを取り込み、振り分け、結果を返す流れの図">
+                            <g fill="none" stroke="currentColor" stroke-width="1"><rect x="20" y="150" width="120" height="84"/><rect x="164" y="150" width="120" height="84"/><rect x="308" y="150" width="120" height="84"/><rect x="452" y="150" width="128" height="84"/><path d="M142 192h18m-6-6 6 6-6 6M286 192h18m-6-6 6 6-6 6M430 192h18m-6-6 6 6-6 6"/></g>
+                            <g fill="currentColor" font-size="20" text-anchor="middle"><text x="80" y="199">メモ</text><text x="224" y="199">取り込み</text><text x="368" y="199">振り分け</text><text x="516" y="199">結果を返す</text><text x="300" y="290" font-size="18" opacity=".65">1時間ごとに自動で動く</text></g>
+                        </svg>
+                    </div>
+                    <div class="app-card__info"><span>A04</span><div><h3>メモの自動振り分け</h3><p>スマートフォンのメモを、1時間ごとにタスクへ登録する。</p></div><small>自動化</small></div>
+                </article>
+            </div>
+        </section>
+
         <section class="works section" id="works" aria-labelledby="works-title">
             <div class="section-intro reveal">
-                <p class="eyebrow">01 / Selected works</p>
+                <p class="eyebrow">02 / Selected works</p>
                 <h2 id="works-title">考えた跡が、<br>見える仕事。</h2>
                 <p>業種やトーンの異なる7つの制作例です。各ケーススタディで、完成画面だけでなく課題・判断・実装範囲まで紹介します。</p>
             </div>
@@ -142,7 +176,7 @@
         </section>
 
         <section class="services section" id="services" aria-labelledby="services-title">
-            <div class="services__head reveal"><p class="eyebrow">02 / Services</p><h2 id="services-title">情報をほどき、<br>使える形まで。</h2></div>
+            <div class="services__head reveal"><p class="eyebrow">03 / Services</p><h2 id="services-title">情報をほどき、<br>使える形まで。</h2></div>
             <div class="service-list">
                 <article class="service-item reveal"><p>01</p><h3>Web design</h3><div><p>目的と優先順位を整理し、ワイヤーフレームからUIまで一貫して設計します。</p><ul><li>情報設計</li><li>ワイヤーフレーム</li><li>UI / Visual design</li></ul></div><span>↘</span></article>
                 <article class="service-item reveal"><p>02</p><h3>Front-end</h3><div><p>デザインの意図を保ちながら、軽く、読みやすく、端末を選ばない画面へ実装します。</p><ul><li>HTML / CSS</li><li>JavaScript</li><li>Responsive / A11y</li></ul></div><span>↘</span></article>
@@ -154,7 +188,7 @@
         <section class="process section" aria-labelledby="process-title">
             <div class="process__visual reveal" aria-hidden="true"><span class="process-orbit process-orbit--one"></span><span class="process-orbit process-orbit--two"></span><b>04</b><p>Steps to launch</p></div>
             <div class="process__content">
-                <div class="reveal"><p class="eyebrow">03 / Process</p><h2 id="process-title">迷いを減らす、<br>4つの工程。</h2></div>
+                <div class="reveal"><p class="eyebrow">04 / Process</p><h2 id="process-title">迷いを減らす、<br>4つの工程。</h2></div>
                 <ol class="process-list">
                     <li class="reveal"><span>01</span><div><h3>Listen &amp; frame</h3><p>背景、目的、届けたい相手、制約を整理し、制作の判断基準を決めます。</p></div></li>
                     <li class="reveal"><span>02</span><div><h3>Structure</h3><p>サイトマップとワイヤーフレームで、情報の順序と動線を検証します。</p></div></li>
@@ -165,7 +199,7 @@
         </section>
 
         <section class="about section" id="about" aria-labelledby="about-title">
-            <div class="about__heading reveal"><p class="eyebrow">04 / About</p><h2 id="about-title">静かに考え、<br>明快につくる。</h2></div>
+            <div class="about__heading reveal"><p class="eyebrow">05 / About</p><h2 id="about-title">静かに考え、<br>明快につくる。</h2></div>
             <div class="about__body">
                 <div class="about__portrait reveal" aria-label="樋口翔惺のモノグラム"><span>SH</span><p>Web designer<br>&amp; front-end</p></div>
                 <div class="about__copy reveal"><p class="about__lead">樋口 翔惺 <span>SHOSEI HIGUCHI</span></p><p>情報量が多いときほど、伝える順番がデザインの質を決めると考えています。内容を丁寧に読み解き、余白・文字・動きに役割を持たせながら、使う人が迷わないWebサイトをつくります。</p><p>Webデザインとフロントエンドの両方を扱うため、見た目だけで終わらず、レスポンシブ表示や操作感まで含めて提案できます。</p><dl><div><dt>Base</dt><dd>Tokyo, Japan</dd></div><div><dt>Focus</dt><dd>Web / UI / Front-end</dd></div><div><dt>Language</dt><dd>Japanese</dd></div></dl><a class="text-link" href="portfolio-sheet.html">プロフィールシートを見る <span>↗</span></a></div>
@@ -173,7 +207,7 @@
         </section>
 
         <section class="contact" id="contact" aria-labelledby="contact-title">
-            <div class="contact__inner reveal"><p class="eyebrow">05 / Contact</p><h2 id="contact-title">つぎのWebを、<br>一緒に考えませんか。</h2><p>新規サイト、リニューアル、LP制作など、まだ要件が固まっていない段階でも大丈夫です。</p><a class="contact__cta" href="mailto:sh.mystar12597@gmail.com?subject=Web%E5%88%B6%E4%BD%9C%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"><span>メールで相談する</span><b>↗</b></a></div>
+            <div class="contact__inner reveal"><p class="eyebrow">06 / Contact</p><h2 id="contact-title">つぎのWebを、<br>一緒に考えませんか。</h2><p>新規サイト、リニューアル、LP制作など、まだ要件が固まっていない段階でも大丈夫です。</p><a class="contact__cta" href="mailto:sh.mystar12597@gmail.com?subject=Web%E5%88%B6%E4%BD%9C%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87"><span>メールで相談する</span><b>↗</b></a></div>
             <div class="contact__word" aria-hidden="true">HELLO</div>
         </section>
     </main>

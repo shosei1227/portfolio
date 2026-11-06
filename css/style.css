@@ -214,3 +214,10 @@ a.app-card__visual:hover img { transform: scale(1.03); }
     .app-card__info { grid-template-columns: 34px 1fr; }
     .app-card__info > small { grid-column: 2; grid-row: 2; }
 }
+
+/* 長い見出しが行の途中で折れないように、サービス欄と問い合わせ欄の文字を少し小さくする（2026-11-06） */
+.contact h2 { font-size: clamp(48px, 7vw, 96px); }
+@media (max-width: 720px) {
+    .services__head h2 { font-size: clamp(30px, 9.6vw, 66px); }
+    .contact h2 { font-size: clamp(30px, 9.4vw, 74px); }
+}

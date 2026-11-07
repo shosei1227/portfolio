@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja" data-toki="asa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>お品書き｜三刻珈琲 MITOKI COFFEE</title>
+  <meta name="description" content="三刻珈琲のお品書き。朝・昼・夜の刻ごとに、豆と食べ物が替わります。価格はすべて税込。（架空の店です）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#efe6d8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Old+Mincho:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/toki.js"></script>
+  <script>try { document.documentElement.dataset.toki = Toki.status().look; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head">
+    <a class="mark" href="index.html" aria-label="三刻珈琲 トップへ">三刻珈琲<small>MITOKI COFFEE</small></a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="oshinagaki.html" aria-current="page">お品書き</a>
+      <a href="mame.html">豆</a>
+      <a href="mise.html">店と行き方</a>
+    </nav>
+    <a class="state" data-s="state" href="mise.html#hours"><span class="state__dot"></span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></a>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">Menu</p>
+        <h1>お品書き</h1>
+        <p>刻が替わると、豆と食べ物が替わります。開いた時刻の刻を先に出しています。価格はすべて税込です。</p>
+      </header>
+
+      <div class="tabs" role="tablist" aria-label="刻を選ぶ">
+        <button class="tab" role="tab" id="tab-asa" aria-controls="asa" aria-selected="true" type="button" data-tab="asa"><b>朝の刻</b><span>7:00 – 11:00</span><span class="tag" data-now="asa" hidden>いま</span></button>
+        <button class="tab" role="tab" id="tab-hiru" aria-controls="hiru" aria-selected="false" type="button" data-tab="hiru" tabindex="-1"><b>昼の刻</b><span>11:00 – 17:00</span><span class="tag" data-now="hiru" hidden>いま</span></button>
+        <button class="tab" role="tab" id="tab-yoru" aria-controls="yoru" aria-selected="false" type="button" data-tab="yoru" tabindex="-1"><b>夜の刻</b><span>17:00 – 22:00</span><span class="tag" data-now="yoru" hidden>いま</span></button>
+      </div>
+
+      <section class="panel" id="asa" role="tabpanel" aria-labelledby="tab-asa">
+        <figure class="panel__img"><img src="img/toast-960.webp" width="960" height="600" alt="皿の上の厚切りトーストに、溶けかけたバターがのっている" loading="lazy"></figure>
+        <div class="panel__txt">
+          <div class="menu">
+            <h2>Coffee</h2>
+            <ul>
+              <li class="is-pick"><b>エチオピア ゲデオ 浅煎り</b><span class="yen">600円</span><small>ハンドドリップ。柑橘と紅茶の香り。朝の刻はこの豆から始めます</small></li>
+              <li><b>カフェオレ</b><span class="yen">650円</span><small>浅煎りを濃いめに淹れて、温めた牛乳と半分ずつ</small></li>
+              <li><b>本日のブレンド</b><span class="yen">550円</span><small>三刻ブレンド。迷ったらこちら</small></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <h2>Food</h2>
+            <ul>
+              <li><b>厚切りトースト</b><span class="yen">450円</span><small>4cmの食パン、バター、はちみつ</small></li>
+              <li><b>ゆで卵</b><span class="yen">100円</span><small>7分ゆで。塩を添えて</small></li>
+              <li><b>朝の組み合わせ</b><span class="yen">950円</span><small>浅煎りと厚切りトースト（100円引き）</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="hiru" role="tabpanel" aria-labelledby="tab-hiru">
+        <figure class="panel__img"><img src="img/canele-960.webp" width="960" height="600" alt="皿の上に、黒に近い焼き色のカヌレがふたつ" loading="lazy"></figure>
+        <div class="panel__txt">
+          <div class="menu">
+            <h2>Coffee</h2>
+            <ul>
+              <li class="is-pick"><b>コロンビア ウィラ 中煎り</b><span class="yen">650円</span><small>ハンドドリップ。黒糖とりんごの甘さ</small></li>
+              <li><b>三つの豆の飲み比べ</b><span class="yen">900円</span><small>浅煎り・中煎り・深煎りを60mlずつ。一日分の刻を一度に</small></li>
+              <li><b>アイスコーヒー</b><span class="yen">600円</span><small>中煎りを急冷して。氷も珈琲で作っています</small></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <h2>Sweets</h2>
+            <ul>
+              <li><b>カヌレ</b><span class="yen">380円</span><small>毎朝12個だけ。売り切れ次第終わります</small></li>
+              <li><b>季節の焼き菓子</b><span class="yen">420円</span><small>11月は栗と黒糖のパウンドケーキ</small></li>
+              <li><b>昼の組み合わせ</b><span class="yen">950円</span><small>中煎りとカヌレ（80円引き）</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="yoru" role="tabpanel" aria-labelledby="tab-yoru">
+        <figure class="panel__img"><img src="img/yoru-960.webp" width="960" height="600" alt="暗い店内で、ランプの灯りが黒い器の珈琲と小さなグラスのお酒を照らしている" loading="lazy"></figure>
+        <div class="panel__txt">
+          <div class="menu">
+            <h2>Coffee</h2>
+            <ul>
+              <li class="is-pick"><b>インドネシア マンデリン 深煎り</b><span class="yen">700円</span><small>ネルドリップ。ハーブとビターチョコ</small></li>
+              <li><b>カフェインを抜いた深煎り</b><span class="yen">700円</span><small>夜でも眠れるように。コロンビアの豆を使います</small></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <h2>Bar &amp; Sweets</h2>
+            <ul>
+              <li><b>珈琲のお酒のソーダ割り</b><span class="yen">800円</span><small>深煎りを漬けた焼酎を、炭酸で</small></li>
+              <li><b>ウイスキー</b><span class="yen">900円</span><small>一杯。深煎りと交互に</small></li>
+              <li><b>珈琲のプリン</b><span class="yen">520円</span><small>固め。苦いカラメル</small></li>
+              <li><b>夜の組み合わせ</b><span class="yen">1,100円</span><small>深煎りと珈琲のプリン（120円引き）</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="notes">
+        <div><h3>持ち帰り</h3><p>豆と焼き菓子だけ持ち帰れます。飲み物は店内でどうぞ。</p></div>
+        <div><h3>アレルギー</h3><p>小麦・卵・乳を使う品があります。気になる方は注文の時にお声がけください。</p></div>
+        <div><h3>刻の替わり目</h3><p>11時と17時をまたいでも、注文した品はそのままお出しします。</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__grid">
+        <p class="foot__name">三刻珈琲</p>
+        <dl>
+          <dt>所在地</dt><dd>東京都刻区三刻町3-3（架空）</dd>
+          <dt>電話</dt><dd class="mono">03-0000-0333（架空）</dd>
+          <dt>営業</dt><dd class="mono">7:00–22:00 水曜定休</dd>
+        </dl>
+        <div class="foot__links">
+          <a href="index.html">トップ</a>
+          <a href="mame.html">豆と焙煎の記録</a>
+          <a href="mise.html">店と行き方</a>
+        </div>
+      </div>
+      <p class="foot__note">三刻珈琲は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。豆の注文は送信されません。画像はすべて3DCGで制作しました。</p>
+    </div>
+  </footer>
+
+  <div class="bar">
+    <span class="state" data-s="state"><span class="state__dot"></span><span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></span></span>
+    <a class="btn btn--ghost" href="mise.html">行き方</a>
+    <a class="btn" href="mame.html">豆を買う</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/oshinagaki.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja" data-toki="asa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>店と行き方｜三刻珈琲 MITOKI COFFEE</title>
+  <meta name="description" content="三刻珈琲の営業時間・席・行き方。7時から22時まで、水曜定休。刻駅西口から徒歩3分。（架空の店です）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#efe6d8">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Old+Mincho:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/toki.js"></script>
+  <script>try { document.documentElement.dataset.toki = Toki.status().look; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head">
+    <a class="mark" href="index.html" aria-label="三刻珈琲 トップへ">三刻珈琲<small>MITOKI COFFEE</small></a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="oshinagaki.html">お品書き</a>
+      <a href="mame.html">豆</a>
+      <a href="mise.html" aria-current="page">店と行き方</a>
+    </nav>
+    <a class="state" data-s="state" href="#hours"><span class="state__dot"></span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></a>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <header class="page-head">
+        <p class="eyebrow">The shop</p>
+        <h1>店と行き方</h1>
+        <p>刻駅の西口から、商店街を抜けて3分。古い印刷所の1階を直して、2019年に開きました。</p>
+      </header>
+
+      <div class="mise-grid">
+        <section id="hours" aria-labelledby="h-hours">
+          <div class="live" aria-live="polite">
+            <span class="state" data-s="state"><span class="state__dot"></span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></span>
+            <p data-s="long">7時から22時まで開いています。</p>
+            <p class="dim mono" style="font-size:var(--t-xs)"><span data-s="date">—</span> <span data-s="clock">—</span> 現在（東京）</p>
+          </div>
+          <h2 id="h-hours" class="h-sec" style="font-size:var(--t-l)">営業時間</h2>
+          <table class="hours">
+            <tbody>
+              <tr data-today="1"><th>月</th><td class="mono">7:00 – 22:00</td><td class="dim">閉店後に焙煎</td></tr>
+              <tr data-today="2"><th>火</th><td class="mono">7:00 – 22:00</td><td></td></tr>
+              <tr data-today="3"><th>水</th><td>定休日</td><td></td></tr>
+              <tr data-today="4"><th>木</th><td class="mono">7:00 – 22:00</td><td class="dim">閉店後に焙煎</td></tr>
+              <tr data-today="5"><th>金</th><td class="mono">7:00 – 22:00</td><td></td></tr>
+              <tr data-today="6"><th>土</th><td class="mono">7:00 – 22:00</td><td></td></tr>
+              <tr data-today="0"><th>日</th><td class="mono">7:00 – 22:00</td><td></td></tr>
+            </tbody>
+          </table>
+          <p class="dim" style="font-size:var(--t-xs);margin-top:12px">年末年始（12月31日〜1月3日）は休みます。注文は閉店の30分前（21:30）までです。</p>
+
+          <dl class="info">
+            <div><dt>席</dt><dd>十八席（カウンター8・テーブル10）。予約はお受けしていません</dd></div>
+            <div><dt>電源</dt><dd>カウンターに4口。夜の刻はパソコンでの作業をご遠慮ください</dd></div>
+            <div><dt>お支払い</dt><dd>現金・カード・交通系IC・QRコード決済</dd></div>
+            <div><dt>子ども</dt><dd>どなたでもどうぞ。ベビーカーはテーブル席へ</dd></div>
+            <div><dt>犬</dt><dd>店先のベンチまで。水を出します</dd></div>
+          </dl>
+        </section>
+
+        <section aria-labelledby="h-access">
+          <h2 id="h-access" class="h-sec" style="font-size:var(--t-l);margin-bottom:16px">行き方</h2>
+          <!-- 地図は架空の町なので、図で描く -->
+          <svg class="map" viewBox="0 0 480 360" role="img" aria-labelledby="map-t">
+            <title id="map-t">刻駅西口から三刻珈琲までの地図。西口を出て商店街を西へ2ブロック、郵便局の角を北へ曲がって右手</title>
+            <rect width="480" height="360" fill="var(--bg-2)"/>
+            <g fill="none" stroke="var(--line)" stroke-width="18">
+              <path d="M0 230 H480"/><path d="M0 110 H480"/><path d="M120 0 V360"/><path d="M300 0 V360"/>
+            </g>
+            <path d="M0 300 H480" stroke="var(--ink)" stroke-width="6" stroke-dasharray="18 10" fill="none"/>
+            <rect x="380" y="282" width="90" height="36" fill="var(--ink)"/>
+            <text x="425" y="305" text-anchor="middle" font-size="13" style="fill:var(--bg)">刻駅</text>
+            <text x="400" y="268" font-size="11">西口</text>
+            <rect x="150" y="160" width="40" height="40" fill="none" stroke="var(--ink)" stroke-width="1"/>
+            <text x="170" y="216" text-anchor="middle" font-size="10">郵便局</text>
+            <text x="210" y="252" font-size="10" class="dim" style="fill:var(--ink-dim)">刻銀座商店街</text>
+            <path d="M392 282 V232 H120 V128" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="138" cy="122" r="9" fill="var(--accent)"/>
+            <text x="154" y="118" font-size="13" font-weight="700">三刻珈琲</text>
+            <text x="154" y="134" font-size="10" style="fill:var(--ink-dim)">古い印刷所の1階</text>
+            <text x="20" y="30" font-size="10" style="fill:var(--ink-dim)">↑ 北</text>
+          </svg>
+          <ol class="steps">
+            <li>刻駅の西口を出て、正面の刻銀座商店街に入ります。</li>
+            <li>商店街を西へ2ブロック歩き、郵便局の角を右（北）へ曲がります。</li>
+            <li>20mほど先の右手、緑の扉と「三刻」の木の看板が目印です。</li>
+          </ol>
+          <dl class="info">
+            <div><dt>住所</dt><dd>東京都刻区三刻町3-3（架空）</dd></div>
+            <div><dt>電話</dt><dd class="mono">03-0000-0333（架空）</dd></div>
+            <div><dt>駐車場</dt><dd>ありません。近くの有料駐車場をご利用ください</dd></div>
+          </dl>
+
+          <div class="faq">
+            <details><summary>席の予約はできますか</summary><p>できません。混む時間は平日8時台と土日の14時台です。17時以降は比較的空いています。</p></details>
+            <details><summary>刻の替わり目に入ったら、どちらの豆ですか</summary><p>注文した時刻の刻の豆です。11時と17時をまたいで続けて頼む場合は、どちらの豆でもお選びいただけます。</p></details>
+            <details><summary>豆だけ買いに行ってもいいですか</summary><p>どうぞ。入口の右に豆の棚があります。50gから量り売りします。</p></details>
+            <details><summary>夜の刻にパソコンを使えないのはなぜですか</summary><p>夜は照明を半分にして、話すか読むための時間にしているからです。朝と昼の刻はご自由にどうぞ。</p></details>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__grid">
+        <p class="foot__name">三刻珈琲</p>
+        <dl>
+          <dt>所在地</dt><dd>東京都刻区三刻町3-3（架空）</dd>
+          <dt>電話</dt><dd class="mono">03-0000-0333（架空）</dd>
+          <dt>営業</dt><dd class="mono">7:00–22:00 水曜定休</dd>
+        </dl>
+        <div class="foot__links">
+          <a href="index.html">トップ</a>
+          <a href="oshinagaki.html">お品書き</a>
+          <a href="mame.html">豆と焙煎の記録</a>
+        </div>
+      </div>
+      <p class="foot__note">三刻珈琲は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。豆の注文は送信されません。画像はすべて3DCGで制作しました。</p>
+    </div>
+  </footer>
+
+  <div class="bar">
+    <span class="state" data-s="state"><span class="state__dot"></span><span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></span></span>
+    <a class="btn btn--ghost" href="oshinagaki.html">お品書き</a>
+    <a class="btn" href="mame.html">豆を買う</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

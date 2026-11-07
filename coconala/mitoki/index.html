@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja" data-toki="asa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>三刻珈琲 MITOKI COFFEE｜朝・昼・夜の自家焙煎の喫茶</title>
+  <meta name="description" content="朝・昼・夜の三つの刻で、出す豆と食べ物が替わる自家焙煎の喫茶。7時から22時まで、水曜定休。（Web制作の作品として作った架空の店です）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#efe6d8">
+  <meta property="og:title" content="三刻珈琲 MITOKI COFFEE">
+  <meta property="og:description" content="朝・昼・夜の三つの刻で、豆と食べ物が替わる自家焙煎の喫茶（架空の店です）">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://shosei1227.github.io/portfolio/mitoki/img/og.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;700&family=Zen+Old+Mincho:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/toki.js"></script>
+  <script>try { document.documentElement.dataset.toki = Toki.status().look; } catch (e) {}</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"三刻珈琲 MITOKI COFFEE","description":"朝・昼・夜の三つの刻で豆と食べ物が替わる自家焙煎の喫茶（架空の店）","servesCuisine":"コーヒー","priceRange":"¥","acceptsReservations":false,
+   "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],"opens":"07:00","closes":"22:00"}]}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head on-hero">
+    <a class="mark" href="index.html" aria-label="三刻珈琲 トップへ">三刻珈琲<small>MITOKI COFFEE</small></a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="oshinagaki.html">お品書き</a>
+      <a href="mame.html">豆</a>
+      <a href="mise.html">店と行き方</a>
+    </nav>
+    <a class="state" data-s="state" href="mise.html#hours"><span class="state__dot"></span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></a>
+  </header>
+
+  <main id="main">
+    <!-- 1画面目：今の刻の絵、店名、今の状況だけ -->
+    <section class="hero" aria-label="三刻珈琲">
+      <img class="hero__img" data-for="asa" src="img/asa-1920.webp" srcset="img/asa-960.webp 960w, img/asa-1920.webp 1920w" sizes="100vw" width="1920" height="1200"
+           alt="朝の光が窓の格子の影を落とすオークの机に、白い器の珈琲が一杯" fetchpriority="high">
+      <img class="hero__img" data-for="hiru" src="img/hiru-1920.webp" srcset="img/hiru-960.webp 960w, img/hiru-1920.webp 1920w" sizes="100vw" width="1920" height="1200"
+           alt="明るい石の台の上で、陶器のドリッパーからガラスのサーバーへ珈琲が落ちている" loading="lazy">
+      <img class="hero__img" data-for="yoru" src="img/yoru-1920.webp" srcset="img/yoru-960.webp 960w, img/yoru-1920.webp 1920w" sizes="100vw" width="1920" height="1200"
+           alt="暗い店内で、ランプの灯りが黒い器の珈琲と小さなグラスのお酒を照らしている" loading="lazy">
+      <div class="hero__in">
+        <h1 class="hero__name"><span>三刻</span><span>珈琲</span></h1>
+        <p class="hero__word" data-s="word">浅煎りと、焼きたてのトースト。</p>
+        <dl class="now" aria-live="polite">
+          <dt>いま</dt><dd><span class="state" data-s="state"><span class="state__dot"></span><span data-s="headline">営業中</span>&nbsp;<span data-s="toki-name">朝の刻</span></span></dd>
+          <dt data-s="pick-label">この刻の一杯</dt><dd><span data-s="bean">エチオピア ゲデオ</span>（<span data-s="roast">浅煎り</span>）</dd>
+          <dt>案内</dt><dd data-s="long">7時から22時まで開いています。</dd>
+        </dl>
+        <div class="day" aria-hidden="true">
+          <div class="day__line">
+            <span class="day__seg" data-seg="asa">朝</span>
+            <span class="day__seg" data-seg="hiru">昼</span>
+            <span class="day__seg" data-seg="yoru">夜</span>
+            <span class="day__pin" data-s="pin"></span>
+          </div>
+          <div class="day__ticks"><span>7:00</span><span>11:00</span><span>17:00</span><span>22:00</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 三つの刻：押すと、その刻の色と絵で見られる -->
+    <section class="toki">
+      <div class="wrap">
+        <div class="toki__head">
+          <div>
+            <p class="eyebrow">Three times a day</p>
+            <h2 class="h-sec rv">一日を、三つの刻に<br>分けて淹れる。</h2>
+          </div>
+          <p class="rv">朝は目を覚ます浅煎り、昼は甘さの出る中煎り、夜は深く落ち着く深煎り。同じ豆を一日中出すより、その時間の体に合う一杯があると考えています。刻が替わると、豆も食べ物も替わります。</p>
+        </div>
+        <div class="toki__grid" role="group" aria-label="三つの刻">
+          <button class="tk" type="button" data-pick="asa" aria-pressed="false">
+            <span class="tk__now" data-now="asa" hidden>いま</span>
+            <span class="tk__time">7:00 – 11:00</span>
+            <span class="tk__name">朝の刻</span>
+            <span class="tk__bean"><b>エチオピア ゲデオ</b>浅煎り。柑橘と紅茶の香り</span>
+            <span class="tk__bean dim">厚切りトースト／ゆで卵</span>
+          </button>
+          <button class="tk" type="button" data-pick="hiru" aria-pressed="false">
+            <span class="tk__now" data-now="hiru" hidden>いま</span>
+            <span class="tk__time">11:00 – 17:00</span>
+            <span class="tk__name">昼の刻</span>
+            <span class="tk__bean"><b>コロンビア ウィラ</b>中煎り。黒糖とりんごの甘さ</span>
+            <span class="tk__bean dim">カヌレ／季節の焼き菓子</span>
+          </button>
+          <button class="tk" type="button" data-pick="yoru" aria-pressed="false">
+            <span class="tk__now" data-now="yoru" hidden>いま</span>
+            <span class="tk__time">17:00 – 22:00</span>
+            <span class="tk__name">夜の刻</span>
+            <span class="tk__bean"><b>インドネシア マンデリン</b>深煎り。ハーブとビターチョコ</span>
+            <span class="tk__bean dim">珈琲のプリン／少しのお酒</span>
+          </button>
+        </div>
+        <p class="toki__note"><span>刻を押すと、その時間の店の色で見られます。</span><button type="button" data-pick="reset" hidden>今の刻に戻す</button></p>
+      </div>
+    </section>
+
+    <!-- 店主の言葉 -->
+    <section class="word">
+      <div class="wrap word__in">
+        <figure class="word__img rv"><img src="img/hiru-960.webp" width="960" height="600" alt="陶器のドリッパーとガラスのサーバー" loading="lazy" style="object-position:72% 50%"></figure>
+        <div class="word__txt rv">
+          <p class="eyebrow">From the counter</p>
+          <h2>同じ店に、一日三回<br>来てもらえたら。</h2>
+          <p>朝は出勤前の十分間、昼は打ち合わせの合間、夜は一日の終わりに一人で。同じ人が同じ日に、違う顔をして入ってきます。</p>
+          <p>その人に毎回同じ一杯を出すのは、少しもったいないと思いました。朝の浅煎りは、夜に飲むと軽すぎる。夜の深煎りは、朝には重すぎる。だから三刻珈琲は、時計を見て豆を替えます。</p>
+          <p class="word__sign">店主・焙煎　朝倉 灯</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 焙煎 -->
+    <section class="roast">
+      <div class="wrap roast__in">
+        <figure class="roast__img rv"><img src="img/roaster-1920.webp" srcset="img/roaster-960.webp 960w, img/roaster-1920.webp 1920w" sizes="(max-width: 900px) 92vw, 56vw" width="1920" height="1200" alt="黒い横向きの釜に真鍮の輪が付いた焙煎機と、焼き上がった豆を冷ます丸い槽" loading="lazy"></figure>
+        <div class="roast__txt rv">
+          <p class="eyebrow">Roasted in the shop</p>
+          <h2 class="h-sec">焙煎は店の奥で、<br>週に二回。</h2>
+          <p>月曜と木曜の閉店後に、5kgの釜で焼きます。豆は焼いてから3日目から14日目までがいちばんおいしいので、それより古い豆は店では出しません。</p>
+          <table class="log">
+            <caption>最近の焙煎</caption>
+            <thead><tr><th scope="col">焙煎日</th><th scope="col">豆</th><th scope="col">深さ</th></tr></thead>
+            <tbody data-s="roastlog">
+              <tr><td class="mono">11/06</td><td>エチオピア ゲデオ</td><td>浅煎り</td></tr>
+              <tr><td class="mono">11/06</td><td>インドネシア マンデリン</td><td>深煎り</td></tr>
+              <tr><td class="mono">11/03</td><td>コロンビア ウィラ</td><td>中煎り</td></tr>
+            </tbody>
+          </table>
+          <a class="more" href="mame.html">豆と焙煎の記録を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 豆を買う -->
+    <section class="beans">
+      <div class="wrap">
+        <div class="beans__head">
+          <div>
+            <p class="eyebrow">Beans to take home</p>
+            <h2 class="h-sec rv">店の豆を、家でも。</h2>
+          </div>
+          <a class="btn" href="mame.html">豆を買う</a>
+        </div>
+        <figure class="beans__img rv"><img src="img/mame-1920.webp" srcset="img/mame-960.webp 960w, img/mame-1920.webp 1920w" sizes="92vw" width="1920" height="1200" alt="" loading="lazy"></figure>
+        <div class="cards">
+          <article class="card rv"><p class="eyebrow">朝の刻の豆</p><h3>エチオピア ゲデオ</h3><p>浅煎り。柑橘、紅茶、はちみつ。</p><p class="price">100g 1,300円</p></article>
+          <article class="card rv"><p class="eyebrow">昼の刻の豆</p><h3>コロンビア ウィラ</h3><p>中煎り。黒糖、りんご。</p><p class="price">100g 1,200円</p></article>
+          <article class="card rv"><p class="eyebrow">夜の刻の豆</p><h3>インドネシア マンデリン</h3><p>深煎り。ハーブ、ビターチョコ。</p><p class="price">100g 1,250円</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 食べ物 -->
+    <section class="food">
+      <div class="wrap">
+        <p class="eyebrow">Something to eat</p>
+        <h2 class="h-sec rv">食べ物も、刻ごとに一品ずつ。</h2>
+        <div class="food__grid">
+          <figure class="rv">
+            <img src="img/toast-960.webp" width="960" height="600" alt="皿の上の厚切りトーストに、溶けかけたバターがのっている" loading="lazy">
+            <figcaption><p class="eyebrow">朝の刻</p><h3>厚切りトースト</h3><p>4cmに切った食パンを、炭火で表面だけ焼きます。バターとはちみつで。450円</p></figcaption>
+          </figure>
+          <figure class="rv">
+            <img src="img/canele-960.webp" width="960" height="600" alt="皿の上に、黒に近い焼き色のカヌレがふたつ" loading="lazy">
+            <figcaption><p class="eyebrow">昼の刻</p><h3>カヌレ</h3><p>外は焦がした砂糖で硬く、中はやわらかく。毎朝12個だけ焼きます。380円</p></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 夜 -->
+    <section class="night">
+      <img src="img/yoru-1920.webp" srcset="img/yoru-960.webp 960w, img/yoru-1920.webp 1920w" sizes="100vw" width="1920" height="1200" alt="" loading="lazy">
+      <div class="wrap night__in">
+        <p class="eyebrow" style="color:#a89a88">After 17:00</p>
+        <h2 class="h-sec rv">夜は灯りを落として、<br>深煎りと少しのお酒を。</h2>
+        <p class="rv">17時から照明を半分にします。夜の刻はパソコンでの作業をご遠慮いただき、話すか、読むか、ぼんやりするための時間にしています。</p>
+        <a class="more" href="oshinagaki.html#yoru">夜のお品書き</a>
+      </div>
+    </section>
+
+    <!-- 店の事実 -->
+    <section class="facts">
+      <div class="wrap">
+        <dl>
+          <div><dt>営業</dt><dd class="mono">7:00–22:00<small>水曜定休・年末年始休み</small></dd></div>
+          <div><dt>席</dt><dd>十八席<small>カウンター8・テーブル10</small></dd></div>
+          <div><dt>予約</dt><dd>不要<small>席の予約はお受けしていません</small></dd></div>
+          <div><dt>場所</dt><dd>刻駅 西口<small>徒歩3分（架空の駅）</small></dd></div>
+        </dl>
+        <div class="facts__cta">
+          <a class="btn" href="mise.html">店と行き方</a>
+          <a class="btn btn--ghost" href="mame.html">豆を買う</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot__grid">
+        <p class="foot__name">三刻珈琲</p>
+        <dl>
+          <dt>所在地</dt><dd>東京都刻区三刻町3-3（架空）</dd>
+          <dt>電話</dt><dd class="mono">03-0000-0333（架空）</dd>
+          <dt>営業</dt><dd class="mono">7:00–22:00 水曜定休</dd>
+        </dl>
+        <div class="foot__links">
+          <a href="oshinagaki.html">お品書き</a>
+          <a href="mame.html">豆と焙煎の記録</a>
+          <a href="mise.html">店と行き方</a>
+        </div>
+      </div>
+      <p class="foot__note">三刻珈琲は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。豆の注文は送信されません。画像はすべて3DCGで制作しました。</p>
+    </div>
+  </footer>
+
+  <div class="bar">
+    <span class="state" data-s="state"><span class="state__dot"></span><span><span data-s="headline">営業中</span>&nbsp;<span data-s="detail">22:00まで</span></span></span>
+    <a class="btn btn--ghost" href="mise.html">行き方</a>
+    <a class="btn" href="mame.html">豆を買う</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

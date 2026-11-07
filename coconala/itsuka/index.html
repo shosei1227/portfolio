@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>五日 ITSUKA｜暦の料理</title>
+  <meta name="description" content="七十二候に合わせて、およそ五日ごとに献立が替わる八席の料理店。夜だけ開きます。（Web制作の作品として作った架空の店です）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0d0b0a">
+  <meta property="og:title" content="五日 ITSUKA｜暦の料理">
+  <meta property="og:description" content="七十二候に合わせて、およそ五日ごとに献立が替わる八席の料理店（架空の店です）">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://shosei1227.github.io/portfolio/itsuka/img/og.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Shippori+Mincho:wght@400;500&display=swap">
+  <link rel="preload" as="image" href="img/wan-1920.webp" imagesrcset="img/wan-960.webp 960w, img/wan-1920.webp 1920w" imagesizes="100vw">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Restaurant","name":"五日 ITSUKA","description":"七十二候に合わせて献立が替わる八席の料理店（架空の店）","servesCuisine":"日本料理","priceRange":"¥¥¥¥","acceptsReservations":true,"openingHours":"Tu-Sa 18:30-22:00"}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head">
+    <a class="mark" href="index.html" aria-label="五日 トップへ">五日</a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="kondate.html">献立</a>
+      <a href="mise.html">店</a>
+      <a class="nav__book" href="yoyaku.html">ご予約</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1画面目：絵を1枚、店名、今日の暦だけ -->
+    <section class="hero" aria-label="五日">
+      <img class="hero__img" src="img/wan-1920.webp" srcset="img/wan-960.webp 960w, img/wan-1920.webp 1920w" sizes="100vw" width="1920" height="1080"
+           alt="黒漆の椀。内側は朱で、澄んだ出汁に真薯が浮かんでいる" fetchpriority="high">
+      <canvas class="hero__steam" aria-hidden="true"></canvas>
+      <h1 class="hero__name tate">五日</h1>
+      <p class="hero__sub tate">暦の料理</p>
+      <div class="today" aria-label="今日の暦">
+        <p class="today__head tate" data-k="head">立冬　初候</p>
+        <p class="today__name tate" data-k="name">山茶始開</p>
+        <p class="today__yomi tate" data-k="yomi">つばきはじめてひらく</p>
+      </div>
+      <a class="hand" href="kondate.html">
+        <svg data-hand viewBox="0 0 100 100" aria-hidden="true"></svg>
+        <span>次の椀まで、あと<span class="num" data-k="left">5</span>日<small>献立を見る</small></span>
+      </a>
+    </section>
+
+    <!-- 店の考え方 -->
+    <section class="statement ink">
+      <img class="statement__img" src="img/ripple-1920.webp" srcset="img/ripple-960.webp 960w, img/ripple-1920.webp 1920w" sizes="100vw" width="1920" height="1080" alt="" loading="lazy">
+      <div class="statement__in">
+        <h2 class="rv">一年を、<br>七十二に分けて<br>料理する。</h2>
+        <div class="rv">
+          <p>昔の暦は、一年をおよそ五日ずつ、七十二の季節に分けました。「蛙が鳴き始める」「霜が降り始める」。名前はどれも、その五日に外で起きることです。</p>
+          <p>五日では、椀を必ず替えます。節気が変わる十五日ごとに、献立をすべて組み直します。同じ献立は一年に一度しかありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- いまの献立 -->
+    <section class="paper">
+      <div class="course">
+        <div class="course__intro rv">
+          <p class="label"><span data-k="head">立冬　初候</span>　<span data-k="range">11月7日から11月11日まで</span></p>
+          <h2>いまの御品書き</h2>
+          <p>「<span data-k="mean">山茶花が咲き始める</span>」五日間の八品です。お品書きの朱の字が、この五日だけの椀です。</p>
+          <a class="more" href="kondate.html">ほかの候の献立を見る</a>
+        </div>
+        <ol class="shinagaki rv" data-menu="now">
+          <li><b>先付</b><span>柿 白和え</span></li>
+          <li class="is-wan"><b>椀</b><span>蟹真薯 青菜 柚子</span></li>
+          <li><b>向付</b><span>平目 昆布締め</span></li>
+          <li><b>焼物</b><span>甘鯛 炭焼</span></li>
+          <li><b>炊合</b><span>海老芋 金時人参</span></li>
+          <li><b>強肴</b><span>香箱蟹 土佐酢</span></li>
+          <li><b>御飯</b><span>新米 白飯</span></li>
+          <li><b>水菓子</b><span>柚子 葛寄せ</span></li>
+        </ol>
+      </div>
+
+      <!-- 料理の手つき -->
+      <div class="three">
+        <figure class="rv">
+          <img src="img/sumi-1920.webp" srcset="img/sumi-960.webp 960w, img/sumi-1920.webp 1920w" sizes="(max-width: 860px) 92vw, 56vw" width="1920" height="1200" alt="灰の上で赤く熾る炭" loading="lazy">
+          <figcaption><h3>焼く</h3><p>焼物は備長炭だけで火を入れます。炎が消え、炭の内側が赤くなってから魚を置きます。</p></figcaption>
+        </figure>
+        <figure class="rv">
+          <img src="img/yuzu-960.webp" width="960" height="768" alt="葉の付いた柚子がふたつ" loading="lazy">
+          <figcaption><h3>香る</h3><p>香りは椀を開ける時の一度きりです。柚子はお客様の前でおろします。</p></figcaption>
+        </figure>
+        <figure class="rv">
+          <img src="img/rice-960.webp" width="960" height="960" alt="土鍋で炊き上がった白米" loading="lazy">
+          <figcaption><h3>炊く</h3><p>御飯は席ごとの土鍋で炊きます。最初の一口は、おかずなしでどうぞ。</p></figcaption>
+        </figure>
+        <figure class="rv">
+          <img src="img/kintsugi-960.webp" width="960" height="960" alt="金で継いだ跡のある黒い皿" loading="lazy">
+          <figcaption><h3>繕う</h3><p>割れた器は金で継ぎ、また使います。器にも、それぞれの時間があります。</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 料理人の言葉 -->
+    <section class="letter ink">
+      <div class="letter__img"><img src="img/sake-960.webp" width="960" height="1200" alt="錫の盃と黒い徳利" loading="lazy"></div>
+      <div class="letter__txt">
+        <div class="letter__body rv">
+          <p>五日という長さは、料理人には短く、季節には十分です。</p>
+          <p>市場の魚が替わり、山の匂いが変わり、<br>昨日は硬かった蕪が今日はやわらかい。</p>
+          <p>私はそれを追いかけているだけです。</p>
+          <p>今夜の皿は、次の五日には作りません。<br>だからこの店は、いつか、また来てください。</p>
+          <p class="sign">水無瀬 朔</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 店の事実 -->
+    <section class="ink">
+      <div class="room">
+        <img src="img/counter-1920.webp" srcset="img/counter-960.webp 960w, img/counter-1920.webp 1920w" sizes="100vw" width="1920" height="1200" alt="檜の一枚板のカウンターに八つの席が並ぶ暗い店内。奥に障子の窓" loading="lazy">
+      </div>
+      <dl class="facts">
+        <div><dt>席</dt><dd>八席<small>檜の一枚板のカウンターのみ</small></dd></div>
+        <div><dt>開始</dt><dd>十八時三十分<small>全員が同時に始めます</small></dd></div>
+        <div><dt>お料理</dt><dd>38,000円<small>税・サービス料込み</small></dd></div>
+        <div><dt>定休</dt><dd>日曜 月曜<small>夜のみの営業です</small></dd></div>
+      </dl>
+    </section>
+
+    <!-- 予約への案内 -->
+    <section class="cta paper">
+      <h2 class="rv">ご予約は、<br>毎月一日の正午から。</h2>
+      <div class="rv">
+        <p>翌々月までの席をお受けします。日にちを選ぶと、その日の椀が分かります。</p>
+        <a class="more" href="yoyaku.html">席を予約する</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <p class="foot__name">五日</p>
+      <dl>
+        <dt>所在地</dt><dd>東京都暦区五日町5-5（架空）</dd>
+        <dt>電話</dt><dd>03-0000-0005（架空）</dd>
+      </dl>
+      <div class="foot__links">
+        <a href="kondate.html">献立</a>
+        <a href="mise.html">店と料理人</a>
+        <a href="yoyaku.html">ご予約</a>
+      </div>
+    </div>
+    <p class="foot__note">五日は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。予約は送信されません。画像はすべて3DCGで制作しました。</p>
+  </footer>
+
+  <div class="bar"><span><small data-k="head">立冬　初候</small><br><span data-k="name">山茶始開</span></span><a href="yoyaku.html">ご予約</a></div>
+
+  <script src="js/koyomi.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

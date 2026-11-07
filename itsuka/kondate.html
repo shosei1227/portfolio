@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>献立｜五日 ITSUKA</title>
+  <meta name="description" content="暦の輪を回すと、七十二候それぞれの御品書きが見られます。（架空の店です）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0d0b0a">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Shippori+Mincho:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head">
+    <a class="mark" href="index.html" aria-label="五日 トップへ">五日</a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="kondate.html" aria-current="page">献立</a>
+      <a href="mise.html">店</a>
+      <a class="nav__book" href="yoyaku.html">ご予約</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="pagehead ink">
+      <div>
+        <p class="label">献立</p>
+        <h1>暦を回して、<br>一年の献立を見る。</h1>
+      </div>
+      <p>輪をつまんで回すか、矢印キーで動かしてください。七十二の候それぞれに、椀がひとつあります。</p>
+    </div>
+
+    <section class="dialwrap ink" aria-label="暦の輪と御品書き">
+      <div>
+        <div class="dial" data-dial role="slider" tabindex="0" aria-label="七十二候を選ぶ" aria-valuemin="1" aria-valuemax="72" aria-valuenow="55">
+          <svg viewBox="0 0 1000 1000" aria-hidden="true">
+            <g class="dial__ring"></g>
+            <line class="dial__needle" x1="500" y1="6" x2="500" y2="70"></line>
+          </svg>
+          <div class="dial__mid">
+            <p class="dial__head tate" data-k="head">立冬　初候</p>
+            <p class="dial__name tate" data-k="name">山茶始開</p>
+            <p class="dial__yomi tate" data-k="yomi">つばきはじめてひらく</p>
+          </div>
+        </div>
+        <div class="dialctl">
+          <button class="btn" type="button" data-prev>前の候</button>
+          <button class="btn" type="button" data-next>次の候</button>
+          <button class="btn" type="button" data-back hidden>今日に戻る</button>
+        </div>
+      </div>
+
+      <div class="kou" data-kou aria-live="polite">
+        <p class="label" data-when>いまの候</p>
+        <p class="kou__range" data-k="range">11月7日から11月11日まで</p>
+        <p class="kou__mean" data-k="mean">山茶花が咲き始める</p>
+        <ol class="shinagaki" data-menu="dial">
+          <li><b>先付</b><span>柿 白和え</span></li>
+          <li class="is-wan"><b>椀</b><span>蟹真薯 青菜 柚子</span></li>
+          <li><b>向付</b><span>平目 昆布締め</span></li>
+          <li><b>焼物</b><span>甘鯛 炭焼</span></li>
+          <li><b>炊合</b><span>海老芋 金時人参</span></li>
+          <li><b>強肴</b><span>香箱蟹 土佐酢</span></li>
+          <li><b>御飯</b><span>新米 白飯</span></li>
+          <li><b>水菓子</b><span>柚子 葛寄せ</span></li>
+        </ol>
+        <p class="kou__color"><i></i>この節気の色　<span data-k="color">椿</span></p>
+      </div>
+    </section>
+
+    <section class="flow paper">
+      <p class="label">八品の流れ</p>
+      <h2 class="rv">二時間半で、<br>季節をひとつ通り抜ける。</h2>
+      <ol class="flow__list">
+        <li class="rv"><h3><span class="num">1</span>先付</h3><p>その日の季節を、ひと口で伝えます。</p></li>
+        <li class="rv"><h3><span class="num">2</span>椀</h3><p>店の中心です。五日ごとに替わります。香りは蓋を開ける時に立ちます。</p></li>
+        <li class="rv"><h3><span class="num">3</span>向付</h3><p>その朝に届いた魚を、昆布か塩で整えます。</p></li>
+        <li class="rv"><h3><span class="num">4</span>焼物</h3><p>備長炭の前で焼き、熱いうちにお出しします。</p></li>
+        <li class="rv"><h3><span class="num">5</span>炊合</h3><p>別々に炊いた旬の野菜を、ひとつの器に合わせます。</p></li>
+        <li class="rv"><h3><span class="num">6</span>強肴</h3><p>お酒に合う一品です。節気で最も替わる皿です。</p></li>
+        <li class="rv"><h3><span class="num">7</span>御飯</h3><p>席ごとの土鍋で炊きます。お代わりもどうぞ。</p></li>
+        <li class="rv"><h3><span class="num">8</span>水菓子</h3><p>果物をほとんどそのまま、少しだけ手を加えて。</p></li>
+      </ol>
+    </section>
+
+    <section class="pairing ink">
+      <div class="rv"><img src="img/sake-960.webp" width="960" height="1200" alt="錫の盃と黒い徳利" loading="lazy"></div>
+      <div class="rv">
+        <p class="label">酒</p>
+        <h2>皿ごとに、<br>酒を合わせる。</h2>
+        <p>日本酒を中心に、六種類を料理の流れに合わせてお注ぎします。お酒を飲まれない方には、番茶と季節の果汁を合わせた飲み物をご用意します。</p>
+        <p class="price">15,000円<span class="label">　お酒の組み合わせ</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <p class="foot__name">五日</p>
+      <dl>
+        <dt>所在地</dt><dd>東京都暦区五日町5-5（架空）</dd>
+        <dt>電話</dt><dd>03-0000-0005（架空）</dd>
+      </dl>
+      <div class="foot__links">
+        <a href="kondate.html">献立</a>
+        <a href="mise.html">店と料理人</a>
+        <a href="yoyaku.html">ご予約</a>
+      </div>
+    </div>
+    <p class="foot__note">五日は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。予約は送信されません。画像はすべて3DCGで制作しました。七十二候の日付は目安で、年によって1日ほど前後します。</p>
+  </footer>
+
+  <div class="bar"><span><small data-k="head">立冬　初候</small><br><span data-k="name">山茶始開</span></span><a href="yoyaku.html">ご予約</a></div>
+
+  <script src="js/koyomi.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/dial.js"></script>
+</body>
+</html>

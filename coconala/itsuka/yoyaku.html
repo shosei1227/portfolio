@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ご予約｜五日 ITSUKA</title>
+  <meta name="description" content="席のご予約とご来店前のご案内です。（架空の店のため、予約は送信されません）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ece6da">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400&family=Shippori+Mincho:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+
+  <header class="head on-paper">
+    <a class="mark" href="index.html" aria-label="五日 トップへ">五日</a>
+    <nav class="nav" aria-label="メインメニュー">
+      <a href="kondate.html">献立</a>
+      <a href="mise.html">店</a>
+      <a class="nav__book" href="yoyaku.html" aria-current="page">ご予約</a>
+    </nav>
+  </header>
+
+  <main id="main" class="paper">
+    <div class="pagehead">
+      <div>
+        <p class="label">ご予約</p>
+        <h1>今夜の皿は、<br>次の五日には<br>作りません。</h1>
+      </div>
+      <p>毎月一日の正午から、翌々月までの席をお受けします。お一人からご予約いただけます。</p>
+    </div>
+
+    <section class="book">
+      <div>
+        <form class="form" data-form novalidate>
+          <div class="field">
+            <label for="date">日にち<span class="req">必須</span></label>
+            <select id="date" name="date" required></select>
+          </div>
+          <p class="dayinfo" data-dayinfo aria-live="polite">日にちを選ぶと、その日の椀が分かります。</p>
+          <div class="two">
+            <div class="field">
+              <label for="people">人数<span class="req">必須</span></label>
+              <select id="people" name="people" required>
+                <option value="1">1名</option>
+                <option value="2" selected>2名</option>
+                <option value="3">3名</option>
+                <option value="4">4名</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="time">開始</label>
+              <input id="time" name="time" value="18時30分（全員同時）" readonly>
+            </div>
+          </div>
+          <div class="field">
+            <label for="name">お名前<span class="req">必須</span></label>
+            <input id="name" name="name" autocomplete="name" required aria-describedby="err-name">
+            <p class="err" id="err-name" data-err="name"></p>
+          </div>
+          <div class="two">
+            <div class="field">
+              <label for="tel">電話番号<span class="req">必須</span></label>
+              <input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="err-tel">
+              <p class="err" id="err-tel" data-err="tel"></p>
+            </div>
+            <div class="field">
+              <label for="mail">メールアドレス<span class="req">必須</span></label>
+              <input id="mail" name="mail" type="email" inputmode="email" autocomplete="email" required aria-describedby="err-mail">
+              <p class="err" id="err-mail" data-err="mail"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="note">苦手な食材・アレルギー</label>
+            <textarea id="note" name="note" placeholder="例：甲殻類が食べられません"></textarea>
+          </div>
+          <div>
+            <label class="check"><input type="checkbox" name="agree" aria-describedby="err-agree"><span>右のご案内とキャンセルの決まりを確かめました</span></label>
+            <p class="err" id="err-agree" data-err="agree"></p>
+          </div>
+          <button class="submit" type="submit">この内容で予約する</button>
+        </form>
+
+        <div class="done" data-done hidden>
+          <h2 tabindex="-1">架空の店のため、予約はここまでです。</h2>
+          <p>実際の店なら、この後に確認のメールが届きます。入力した内容は送信も保存もしていません。</p>
+          <dl></dl>
+          <p style="margin-top:18px"><button class="btn" style="border-color:currentColor" type="button" data-again>入力に戻る</button></p>
+        </div>
+      </div>
+
+      <div class="rules">
+        <section>
+          <h2>ご来店の前に</h2>
+          <dl>
+            <div><dt>お料理</dt><dd>38,000円（税・サービス料込み）。八品のおまかせのみです</dd></div>
+            <div><dt>開始時刻</dt><dd>18時30分に全員同時に始めます。遅れる時はお電話ください</dd></div>
+            <div><dt>苦手な物</dt><dd>3日前までにお知らせください。当日の変更はできません</dd></div>
+            <div><dt>香り</dt><dd>椀の香りを大切にしています。香水は控えてください</dd></div>
+            <div><dt>お子様</dt><dd>12歳以上の方をお受けしています</dd></div>
+          </dl>
+        </section>
+        <section>
+          <h2>キャンセルの決まり</h2>
+          <dl>
+            <div><dt>7日前まで</dt><dd>無料</dd></div>
+            <div><dt>6日〜3日前</dt><dd>お料理の代金の50%</dd></div>
+            <div><dt>2日前から当日</dt><dd>お料理の代金の100%</dd></div>
+          </dl>
+        </section>
+        <section>
+          <h2>行き方</h2>
+          <dl>
+            <div><dt>住所</dt><dd>東京都暦区五日町5-5（架空）</dd></div>
+            <div><dt>最寄り</dt><dd>五日町駅 2番出口から徒歩5分。看板はありません。竹の垣根が目印です</dd></div>
+            <div><dt>電話</dt><dd>03-0000-0005（架空）。受付は火〜土の15時〜17時です</dd></div>
+          </dl>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__grid">
+      <p class="foot__name">五日</p>
+      <dl>
+        <dt>所在地</dt><dd>東京都暦区五日町5-5（架空）</dd>
+        <dt>電話</dt><dd>03-0000-0005（架空）</dd>
+      </dl>
+      <div class="foot__links">
+        <a href="kondate.html">献立</a>
+        <a href="mise.html">店と料理人</a>
+        <a href="yoyaku.html">ご予約</a>
+      </div>
+    </div>
+    <p class="foot__note">五日は、Web制作の作品として作った架空の店です。実在の店・人物とは関係ありません。予約は送信されません。画像はすべて3DCGで制作しました。</p>
+  </footer>
+
+  <script src="js/koyomi.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/yoyaku.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>連絡｜汐見 透</title>
+  <meta name="description" content="汐見透の作品の購入・貸し出し、展示・取材、画像の使用の連絡先。（架空の作家のサイトです）">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#e9e6e1">
+  <meta property="og:title" content="連絡｜汐見 透">
+  <meta property="og:description" content="汐見透の作品の購入・貸し出し、展示・取材、画像の使用の連絡先。（架空の作家のサイトです）">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://shosei1227.github.io/portfolio/shiomi/img/og.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Murecho:wght@400;500;700&family=Shippori+Mincho+B1:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="head">
+    <a class="mark" href="index.html"><span class="mark__ja">汐見 透</span><span class="mark__en">Toru Shiomi</span></a>
+    <nav class="nav" aria-label="メインメニュー"><a href="works.html">作品目録</a><a href="artist.html">作家</a><a href="contact.html" aria-current="page">連絡</a></nav>
+  </header>
+  <main id="main">
+    <div class="contact wrap">
+      <header>
+        <p class="eyebrow">Contact</p>
+        <h1 class="sec-title sec-title--page">連絡</h1>
+        <p class="contact__lead">作品の購入と貸し出しは画廊が、展示・取材・画像の使用は工房が受けます。下の欄から送ると、内容に合わせて担当に回します。</p>
+      </header>
+      <dl class="who">
+        <dt>作品の購入・貸し出し</dt><dd>ギャラリー灯（東京都中央区）が扱います。所蔵先が「作家蔵」の作品は、画廊を通して相談できます。</dd>
+        <dt>展示・取材・講演</dt><dd>工房が受けます。展示の相談には、会場の天井の高さと照明の位置が分かる図面があると早く答えられます。</dd>
+        <dt>画像の使用</dt><dd>記事・論文・展覧会の告知に使えます。作品ページの「記事や論文に載せる時の書き方」の通りに、作品のクレジットを添えてください。</dd>
+      </dl>
+      <form class="form" id="form" novalidate>
+        <fieldset class="form__kind">
+          <legend>用件</legend>
+          <label class="chip-btn"><input type="radio" name="kind" value="buy" checked><span>購入・貸し出し</span></label>
+          <label class="chip-btn"><input type="radio" name="kind" value="show"><span>展示・取材</span></label>
+          <label class="chip-btn"><input type="radio" name="kind" value="image"><span>画像の使用</span></label>
+        </fieldset>
+        <label class="field"><span>お名前</span><input id="f-name" name="name" type="text" autocomplete="name" required></label>
+        <label class="field"><span>メールアドレス</span><input id="f-mail" name="mail" type="email" autocomplete="email" required></label>
+        <label class="field"><span>作品（任意）</span><select id="f-work" name="work"><option value="">選ばない</option><option value="001">No. 001《雨粒の重さ》2008</option><option value="002">No. 002《十二の粒》2008</option><option value="003">No. 003《夕方の柱》2009</option><option value="004">No. 004《朝露》2009</option><option value="005">No. 005《青い柱》2010</option><option value="006">No. 006《二本の柱》2010</option><option value="007">No. 007《最初の輪》2011</option><option value="008">No. 008《灯台》2011</option><option value="009">No. 009《欠けた輪》2012</option><option value="010">No. 010《二重の輪》2012</option><option value="011">No. 011《塩の柱》2013</option><option value="012">No. 012《日食》2013</option><option value="013">No. 013《三枚の窓》2014</option><option value="014">No. 014《緑の部屋》2014</option><option value="015">No. 015《夜明けの板》2015</option><option value="016">No. 016《月の輪》2015</option><option value="017">No. 017《七本の柱》2016</option><option value="018">No. 018《赤い境界》2016</option><option value="019">No. 019《軌道》2017</option><option value="020">No. 020《影の地図》2017</option><option value="021">No. 021《静かな水面》2018</option><option value="022">No. 022《潮の満ち引き》2018</option><option value="023">No. 023《琥珀の輪》2019</option><option value="024">No. 024《雨の後》2020</option><option value="025">No. 025《重なる窓》2021</option><option value="026">No. 026《青い柱 II》2021</option><option value="027">No. 027《夕凪》2022</option><option value="028">No. 028《地平》2023</option><option value="029">No. 029《光の深さ》2024</option><option value="030">No. 030《透明な時間》2025</option></select></label>
+        <label class="field"><span>内容</span><textarea id="f-body" name="body" rows="6" required></textarea></label>
+        <p class="form__err" id="form-err" role="alert" hidden></p>
+        <button class="form__send" type="submit">内容を確かめる</button>
+      </form>
+      <div class="sent" id="sent" hidden tabindex="-1">
+        <h2 class="block__title">送る内容</h2>
+        <dl class="facts" id="sent-list"></dl>
+        <p class="sent__note">このサイトは架空の作家のサイトなので、実際にはどこにも送りません。入力した内容はこの画面だけに表示しています。</p>
+        <button type="button" class="copy" id="sent-back">入力に戻る</button>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <nav class="strip" aria-label="30点の光の色"><a href="works/001-ame.html" style="--light:#7FC4D8;--light-band:#7FC4D8" title="No. 001 雨粒の重さ"><span class="sr">No. 001 雨粒の重さ</span></a><a href="works/002-juni.html" style="--light:#3E7FD0;--light-band:#3E7FD0" title="No. 002 十二の粒"><span class="sr">No. 002 十二の粒</span></a><a href="works/003-yugata.html" style="--light:#E08A2E;--light-band:#E08A2E" title="No. 003 夕方の柱"><span class="sr">No. 003 夕方の柱</span></a><a href="works/004-asatsuyu.html" style="--light:#A6D38A;--light-band:#A6D38A" title="No. 004 朝露"><span class="sr">No. 004 朝露</span></a><a href="works/005-aoi-hashira.html" style="--light:#2F6FE0;--light-band:#2F6FE0" title="No. 005 青い柱"><span class="sr">No. 005 青い柱</span></a><a href="works/006-nihon.html" style="--light:#D8475B;--light-band:linear-gradient(90deg, #D8475B 0.0% 50.0%, #3FB6C8 50.0% 100.0%)" title="No. 006 二本の柱"><span class="sr">No. 006 二本の柱</span></a><a href="works/007-saisho-no-wa.html" style="--light:#E3A23B;--light-band:#E3A23B" title="No. 007 最初の輪"><span class="sr">No. 007 最初の輪</span></a><a href="works/008-todai.html" style="--light:#F2D04A;--light-band:#F2D04A" title="No. 008 灯台"><span class="sr">No. 008 灯台</span></a><a href="works/009-kaketa-wa.html" style="--light:#8C62D9;--light-band:#8C62D9" title="No. 009 欠けた輪"><span class="sr">No. 009 欠けた輪</span></a><a href="works/010-niju.html" style="--light:#2BA99A;--light-band:#2BA99A" title="No. 010 二重の輪"><span class="sr">No. 010 二重の輪</span></a><a href="works/011-shio.html" style="--light:#E7E1D2;--light-band:#E7E1D2" title="No. 011 塩の柱"><span class="sr">No. 011 塩の柱</span></a><a href="works/012-nisshoku.html" style="--light:#D96A1E;--light-band:#D96A1E" title="No. 012 日食"><span class="sr">No. 012 日食</span></a><a href="works/013-sanmai.html" style="--light:#3FB8D8;--light-band:linear-gradient(90deg, #3FB8D8 0.0% 33.3%, #D8479B 33.3% 66.7%, #F2C94A 66.7% 100.0%)" title="No. 013 三枚の窓"><span class="sr">No. 013 三枚の窓</span></a><a href="works/014-midori.html" style="--light:#4FB566;--light-band:#4FB566" title="No. 014 緑の部屋"><span class="sr">No. 014 緑の部屋</span></a><a href="works/015-yoake.html" style="--light:#E88A9E;--light-band:#E88A9E" title="No. 015 夜明けの板"><span class="sr">No. 015 夜明けの板</span></a><a href="works/016-tsuki.html" style="--light:#9DB4D6;--light-band:#9DB4D6" title="No. 016 月の輪"><span class="sr">No. 016 月の輪</span></a><a href="works/017-nanahon.html" style="--light:#D8475B;--light-band:linear-gradient(90deg, #D8475B 0.0% 14.3%, #E08A2E 14.3% 28.6%, #F2D04A 28.6% 42.9%, #4FB566 42.9% 57.1%, #3FB6C8 57.1% 71.4%, #2F6FE0 71.4% 85.7%, #8C62D9 85.7% 100.0%)" title="No. 017 七本の柱"><span class="sr">No. 017 七本の柱</span></a><a href="works/018-akai-kyokai.html" style="--light:#C8323A;--light-band:#C8323A" title="No. 018 赤い境界"><span class="sr">No. 018 赤い境界</span></a><a href="works/019-kido.html" style="--light:#4B4FC8;--light-band:#4B4FC8" title="No. 019 軌道"><span class="sr">No. 019 軌道</span></a><a href="works/020-kage-no-chizu.html" style="--light:#9CC23A;--light-band:#9CC23A" title="No. 020 影の地図"><span class="sr">No. 020 影の地図</span></a><a href="works/021-shizuka.html" style="--light:#5CC9C2;--light-band:#5CC9C2" title="No. 021 静かな水面"><span class="sr">No. 021 静かな水面</span></a><a href="works/022-shio-no-michihiki.html" style="--light:#2C5FB8;--light-band:#2C5FB8" title="No. 022 潮の満ち引き"><span class="sr">No. 022 潮の満ち引き</span></a><a href="works/023-kohaku.html" style="--light:#E8892A;--light-band:#E8892A" title="No. 023 琥珀の輪"><span class="sr">No. 023 琥珀の輪</span></a><a href="works/024-ame-no-ato.html" style="--light:#A88ED8;--light-band:#A88ED8" title="No. 024 雨の後"><span class="sr">No. 024 雨の後</span></a><a href="works/025-kasanaru.html" style="--light:#C8409A;--light-band:#C8409A" title="No. 025 重なる窓"><span class="sr">No. 025 重なる窓</span></a><a href="works/026-aoi-hashira-2.html" style="--light:#1F4FC0;--light-band:#1F4FC0" title="No. 026 青い柱 II"><span class="sr">No. 026 青い柱 II</span></a><a href="works/027-yunagi.html" style="--light:#EE8A6A;--light-band:#EE8A6A" title="No. 027 夕凪"><span class="sr">No. 027 夕凪</span></a><a href="works/028-chihei.html" style="--light:#E2B93A;--light-band:#E2B93A" title="No. 028 地平"><span class="sr">No. 028 地平</span></a><a href="works/029-hikari-no-fukasa.html" style="--light:#2FA77A;--light-band:#2FA77A" title="No. 029 光の深さ"><span class="sr">No. 029 光の深さ</span></a><a href="works/030-tomei-na-jikan.html" style="--light:#6FA8E0;--light-band:#6FA8E0" title="No. 030 透明な時間"><span class="sr">No. 030 透明な時間</span></a></nav>
+    <div class="foot__in">
+      <p class="foot__name">汐見 透 工房<span>Toru Shiomi Studio</span></p>
+      <p class="foot__note">このサイトは、Web制作の作品として作った架空の作家のサイトです。作家・作品・美術館・画廊・展覧会はすべて架空で、作品の写真は3DCGで描いています。</p>
+      <p class="foot__copy mono">© 2008–2026 Toru Shiomi Studio</p>
+    </div>
+  </footer>
+</body>
+</html>

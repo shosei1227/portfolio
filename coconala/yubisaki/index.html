@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>指先の図形</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="stage">
+    <!-- カメラ映像と図形は canvas に重ねて描く -->
+    <video class="stage-video" playsinline muted></video>
+    <canvas class="stage-canvas" aria-label="指先をつないだ図形"></canvas>
+
+    <p class="stage-hint" aria-live="polite"></p>
+
+    <section class="start">
+      <div class="start-inner">
+        <h1 class="start-ttl">指先の図形</h1>
+        <ul class="start-list">
+          <li class="start-item">手を広げると、指先どうしがつながって図形になります。</li>
+          <li class="start-item">両手を広げると、左右の指の間に帯が張られます。</li>
+          <li class="start-item">手を裏返すか、指を1本さっと弾くと、色が変わります。</li>
+        </ul>
+        <button class="start-btn" type="button">カメラを使って始める</button>
+        <p class="start-note">映像はお使いの端末の中だけで処理し、外には送りません。</p>
+        <p class="start-error" role="alert"></p>
+      </div>
+      <!-- /start-inner -->
+    </section>
+    <!-- /start -->
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

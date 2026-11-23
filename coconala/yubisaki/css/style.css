@@ -1,0 +1,107 @@
+/****************************************
+  ベース
+*****************************************/
+body {
+  overflow: hidden;
+  color: #f4f1ea;
+  background: #101114;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/****************************************
+  stage（映像・図形・案内を同じマスに重ねる。position は使わない）
+*****************************************/
+.stage {
+  display: grid;
+  grid-template: 100dvh / 100vw;
+}
+
+.stage > * { grid-area: 1 / 1; }
+
+/* 映像は canvas に描き写すので、要素そのものは見せない */
+.stage-video {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.stage-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.stage-hint {
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 40px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background: rgba(16, 17, 20, 0.72);
+  font-size: 15px;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.stage-hint:empty { opacity: 0; }
+
+/****************************************
+  start（はじめの画面）
+*****************************************/
+.start {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #101114;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.start.__hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.start-inner { max-width: 520px; }
+
+.start-ttl {
+  font-size: clamp(36px, 8vw, 60px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.start-list { margin-top: 24px; }
+
+.start-item:not(:first-child) { margin-top: 4px; }
+
+.start-btn {
+  margin-top: 32px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  color: #101114;
+  background: #ffb52e;
+  font-weight: 700;
+}
+
+.start-btn:hover { background: #ffc861; }
+
+.start-btn:focus-visible {
+  outline: 3px solid #f4f1ea;
+  outline-offset: 3px;
+}
+
+.start-btn:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+
+.start-note {
+  margin-top: 16px;
+  color: #b3b0a9;
+  font-size: 13px;
+}
+
+.start-error {
+  margin-top: 12px;
+  color: #ff8f7a;
+}

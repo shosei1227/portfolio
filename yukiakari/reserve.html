@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <title>お取り置き予約｜雪灯 YUKIAKARI</title>
+  <meta name="description" content="雪灯のクリスマスコフレ 2026 の店頭お取り置き予約。受け取る店舗と日にちを選んで予約できます。">
+  <meta name="theme-color" content="#0b1026">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="お取り置き予約｜雪灯 YUKIAKARI">
+  <meta property="og:description" content="雪灯のクリスマスコフレ 2026 の店頭お取り置き予約。受け取る店舗と日にちを選んで予約できます。">
+  <meta property="og:image" content="img/og.jpg">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body class="js_body">
+  <header class="l_header l_header__lower js_header">
+    <div class="l_header-inner">
+      <p class="l_header-logo">
+        <a href="index.html" class="l_header-logo_link">
+          <span class="l_header-logo_en">YUKIAKARI</span>
+          <span class="l_header-logo_ja">雪灯</span>
+        </a>
+      </p>
+      <button class="m_hamburger js_hamburger" type="button" aria-label="メニューを開く" aria-controls="global-nav" aria-expanded="false">
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+        <span class="m_hamburger-bar"></span>
+      </button>
+      <nav class="l_header-nav js_navigation" id="global-nav">
+        <ul class="l_header-nav_list">
+          <li class="l_header-nav_item"><a href="collection.html" class="l_header-nav_link">Collection</a></li>
+          <li class="l_header-nav_item"><a href="story.html" class="l_header-nav_link">Story</a></li>
+          <li class="l_header-nav_item"><a href="index.html#gift" class="l_header-nav_link">Gift</a></li>
+          <li class="l_header-nav_item"><a href="index.html#faq" class="l_header-nav_link">FAQ</a></li>
+          <li class="l_header-nav_item l_header-nav_item__btn"><a href="reserve.html" class="m_btn m_btn__small">お取り置き予約</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="m_kv m_kv__reserve">
+      <div class="m_kv_inner">
+        <h1 class="m_kv_title m_kv_title__reserve">お取り置き予約</h1>
+        <p class="m_kv_txt">12月20日まで受け付けています</p>
+      </div>
+    </section>
+    <section class="reserve l_contents">
+      <div class="l_container-sm">
+        <p class="reserve_lead">ご希望の商品と、受け取る店舗・日にちを選んでください。予約のお支払いは、店頭でお受け取りの時にお願いします。</p>
+        <form class="reserve_form js_form" action="#" method="post" novalidate>
+          <dl class="reserve_form_list">
+            <div class="reserve_form_row" data-field="name">
+              <dt class="reserve_form_title"><label for="name">お名前</label><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <input class="reserve_form_input" type="text" id="name" name="name" autocomplete="name" placeholder="雪野 あかり">
+                <p class="reserve_form_error" role="alert">お名前を入力してください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="kana">
+              <dt class="reserve_form_title"><label for="kana">フリガナ</label><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <input class="reserve_form_input" type="text" id="kana" name="kana" placeholder="ユキノ アカリ">
+                <p class="reserve_form_error" role="alert">フリガナを全角カタカナで入力してください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="tel">
+              <dt class="reserve_form_title"><label for="tel">電話番号</label><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <input class="reserve_form_input" type="tel" id="tel" name="tel" autocomplete="tel" inputmode="numeric" placeholder="09012345678">
+                <p class="reserve_form_note">ハイフンは無くても構いません。</p>
+                <p class="reserve_form_error" role="alert">電話番号を半角数字で入力してください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="mail">
+              <dt class="reserve_form_title"><label for="mail">メールアドレス</label><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <input class="reserve_form_input" type="email" id="mail" name="mail" autocomplete="email">
+                <p class="reserve_form_note">予約の受付をメールでお知らせします。</p>
+                <p class="reserve_form_error" role="alert">メールアドレスの形で入力してください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="item">
+              <dt class="reserve_form_title"><span id="label-item">取り置きする商品</span><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <div class="reserve_form_choices" role="group" aria-labelledby="label-item">
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="item" value="クリスマスコフレ「雪灯」 ¥13,200">クリスマスコフレ「雪灯」 ¥13,200</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="item" value="アイパレット「聖夜の灯」 ¥7,150">アイパレット「聖夜の灯」 ¥7,150</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="item" value="ルージュ「スノーベリー」 各¥4,620">ルージュ「スノーベリー」 各¥4,620</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="item" value="オードパルファム「冬の森」 ¥9,900">オードパルファム「冬の森」 ¥9,900</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="item" value="オーナメント ハンドクリーム 各¥2,750">オーナメント ハンドクリーム 各¥2,750</label>
+                </div>
+                <p class="reserve_form_error" role="alert">商品を1つ以上選んでください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="store">
+              <dt class="reserve_form_title"><span id="label-store">受け取る店舗</span><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <div class="reserve_form_choices" role="radiogroup" aria-labelledby="label-store">
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="radio" name="store" value="銀座本店">銀座本店</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="radio" name="store" value="表参道店">表参道店</label>
+                  <label class="reserve_form_choice"><input class="reserve_form_check" type="radio" name="store" value="梅田店">梅田店</label>
+                </div>
+                <p class="reserve_form_error" role="alert">店舗を選んでください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="date">
+              <dt class="reserve_form_title"><label for="date">受け取りの日</label><span class="reserve_form_required">必須</span></dt>
+              <dd class="reserve_form_data">
+                <input class="reserve_form_input" type="date" id="date" name="date" min="2026-11-01" max="2026-12-24">
+                <p class="reserve_form_note">11月1日から12月24日まで選べます。</p>
+                <p class="reserve_form_error" role="alert">受け取りの日を選んでください。</p>
+              </dd>
+            </div>
+            <div class="reserve_form_row" data-field="message">
+              <dt class="reserve_form_title"><label for="message">ご要望</label><span class="reserve_form_optional">任意</span></dt>
+              <dd class="reserve_form_data">
+                <textarea class="reserve_form_textarea" id="message" name="message" placeholder="ラッピングの色やメッセージカードの文面など"></textarea>
+              </dd>
+            </div>
+          </dl>
+          <div class="reserve_form_privacy" data-field="privacy">
+            <label class="reserve_form_choice"><input class="reserve_form_check" type="checkbox" name="privacy"><span><a href="privacy.html" class="reserve_form_privacy_link" target="_blank" rel="noopener">個人情報の取り扱い</a>に同意する</span></label>
+            <p class="reserve_form_error" role="alert">同意のチェックを入れてください。</p>
+          </div>
+          <div class="reserve_form_btn-wrapper">
+            <button class="m_btn m_btn__gold reserve_form_submit" type="submit">予約の内容を送る</button>
+          </div>
+        </form>
+        <div class="reserve_thanks js_thanks" hidden>
+          <p class="reserve_thanks_title">ご予約ありがとうございます。</p>
+          <p class="reserve_thanks_txt">このページは制作見本のため、実際には送信されていません。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="l_footer">
+    <div class="l_footer-inner l_container">
+      <div class="l_footer-info">
+        <p class="l_footer-logo"><a href="index.html" class="l_footer-logo_link">YUKIAKARI</a></p>
+        <p class="l_footer-address">雪灯 銀座本店<br>東京都中央区銀座 0-0-0<br>11:00–20:00（12月は21:00まで）</p>
+      </div>
+      <nav class="l_footer-nav" aria-label="フッターのメニュー">
+        <ul class="l_footer-nav_list">
+          <li class="l_footer-nav_item"><a href="collection.html" class="l_footer-nav_link">Collection</a></li>
+          <li class="l_footer-nav_item"><a href="story.html" class="l_footer-nav_link">Story</a></li>
+          <li class="l_footer-nav_item"><a href="reserve.html" class="l_footer-nav_link">Reserve</a></li>
+          <li class="l_footer-nav_item"><a href="privacy.html" class="l_footer-nav_link">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="l_footer-note">このサイトはポートフォリオ用の制作見本です。ブランド・商品・店舗・価格はすべて架空です。</p>
+    <p class="l_footer-copyright"><small>&copy; 2026 YUKIAKARI</small></p>
+  </footer>
+</body>
+</html>
